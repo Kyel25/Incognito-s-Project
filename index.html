@@ -4,25 +4,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>The Clothing Portal</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
-<style>
-  *{
-    box-sizing: border-box;
-  }
-
-  nav{
-    
-  }
-    
-</style>
   
 <body>
-  <nav>
-    <a href=index.html>The clothing portal</a>
-  </nav>
+  <header>
+    <div>
+      <nav>
+        <a href=index.html id=homepage>THE CLOTHING PORTAL (WIP)</a>
+      </nav>  
+    </div>
+    <div>
+      <form action="info.html" method="GET" id=searchbar>
+         SEARCH HERE: 
+         <input type="text" name="search here" placeholder="search" />
+         <input type="submit" value="search" />
+       </form>
+    </div>
+  </header>
+
+  <main>
+    <section id=BInfo>
+      Welcome to the Homepage with some clickable links
+    </section>
+    
+    <section id=cards>
+      <article class="card">
+        <a href=info.html class="title">Adidas</a>
+        <img src="/Logos/Adidas Logo.png">
+      </article>
+      
+      <article class=card>
+        <a href=info.html class="title">Puma</a>
+        <img src="/Logos/Puma Logo.png">
+      </article>
+      
+      <article class=card>
+        <a href=info.html class="title">Nike</a>
+        <img src="/Logos/Nike Logo.jpg">
+      </article>
+    </section>
+  </main> 
+  
+  <footer>
+    <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>
+  </footer>
+  
   
 </body>
 
