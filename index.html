@@ -6,48 +6,103 @@
   <meta name="viewport" content="width=device-width">
   <title>The Clothing Portal</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+  
   
 <body>
   <header>
     <div>
       <nav>
-        <a href=index.html id=homepage>THE CLOTHING PORTAL (WIP)</a>
+        <a href=index.html id=homepage>THE CLOTHING PORTAL</a>
       </nav>  
     </div>
-    <div>
-      <form action="info.html" method="GET" id=searchbar>
-         SEARCH HERE: 
-         <input type="text" name="search here" placeholder="search" />
-         <input type="submit" value="search" />
-       </form>
-    </div>
+      <article>
+        <form action="info.html" method="GET" id=searchbar>
+        SEARCH HERE: 
+        <input type="text" name="search here" placeholder="search" />
+        <input type="submit" value="search" />
+      </form>
+      </article>
+      <article class="social-icons">
+        Follow Us!
+        <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
+      <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/yourusername"style="color: white;"target="_blank">
+      <i class="fab fa-facebook fa-2x"></i>
+        </a>
+      </article>
+      
   </header>
 
   <main>
-    <section id=BInfo>
-      Welcome to the Homepage with some clickable links
+    <section id=siteInfo><p>
+
+  <h4 class="animated-text">The Clothing Portal is a premier online destination for fashion enthusiasts. Our website offers a wide variety of clothing brands, from luxury designers to emerging labels, all in one place. We believe that fashion should be accessible to everyone, and our curated selection of clothing ensures that there is something for every style and budget. With our user-friendly interface, customers can easily browse our extensive collection and find the perfect outfit for any occasion. From trendy streetwear to classic pieces, The Clothing Portal has it all. Shop with us today and elevate your wardrobe to new heights!
+  </h4>
     </section>
-    
-    <section id=cards>
-      <article class="card">
-        <a href=info.html class="title">Adidas</a>
-        <img src="/Logos/Adidas Logo.png">
-      </article>
+
+     </div>
+<section id=cards>
+      <figure class=card id=card1>
+        <p class=title>ADIDAS</p>
+        <a href="./Pages/Adidas.html"><img src="/Logos/Adidas Logo.png" class=center></a>
+        <figcaption>
+          <h3>Bodrum Salvador</h3>
+          <h4>Luxery</h4>
+        </figcaption>
+          <a href="./Pages/Adidas.html"></a>
+      </figure>
       
-      <article class=card>
-        <a href=info.html class="title">Puma</a>
-        <img src="/Logos/Puma Logo.png">
-      </article>
+      <figure class=card id=card2>
+        <p class=title> PUMA </p>
+        <a href="./Pages/Puma.html"><img src="/Logos/Puma Logo.jpg" class="center"></a>
+        <figcaption>
+          <h3>Bodrum Salvador</h3>
+          <h4>Luxery</h4>
+        </figcaption>
+          <a href="./Pages/Puma.html"></a>
+      </figure>
       
-      <article class=card>
-        <a href=info.html class="title">Nike</a>
-        <img src="/Logos/Nike Logo.jpg">
-      </article>
+      <figure class=card id=card3>
+        <p class=title>NIKE</p>
+        <a href="./Pages/Nike.html"><img src="/Logos/Nike Logo.png" class=center></a>
+        <a href="./Pages/Nike.html"></a>
+      </figure>
+
+      <figure class=card id=card4>
+        <p class=title>THE NORTH FACE</p>
+        <a href="./Pages/North_Face.html"><img src="/Logos/The-North-Face-Logo.png" class=center></a>
+        <figcaption>
+          <h3>Bodrum Salvador</h3>
+          <h4>Luxery</h4>
+        </figcaption>
+          <a href="./Pages/North_Face.html"></a>
+      </figure>
     </section>
   </main> 
   
   <footer>
+     <div class="footer-heading">
+    <h1 class="left-heading">OUR MISSION</h1>
+    
+    <h1 class="right-heading">CONTACT US</h1>
+  </div>
+     <div class="footer-content">
+    <div class="left-paragraph">
+      <p>To distribute products of the highest quality and integrity, that exceeds customers expectations for service and dependability
+</p>
+    </div>
+    <div class="right-paragraph">
+     <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
+      <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/yourusername"style="color: white;"target="_blank">
+      <i class="fab fa-facebook fa-2x"></i>
+        </a> <p>+1 868-662-6002</p>
+    </div>
+  </div>
     <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>
   </footer>
   
