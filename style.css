@@ -23,13 +23,19 @@ html {
   }
 
   body{
-    display: grid;
-    background-color: #FFFFFF;
+    display: fill;
+/*     background-color: #FFFFFF; */
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     height: 100%
     padding: 0;
     margin: 0;
+    background-image: linear-gradient(to bottom right, black, grey, black, grey)
+/*       background-image: url("https://img.freepik.com/premium-vector/dark-abstract-background-with-lines_79145-403.jpg");
+/*     background-size: fill; */
+/*    background-repeat: no-repeat; */
+/*   background-position: center; */
+/*      background-color: #303030; */
   }
   
   nav{
@@ -40,10 +46,23 @@ html {
 
   #homepage{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 26px;
-    color: white;
     text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1.5s;
   }
+
+#homepage:hover {
+  color: #161516;
+  text-shadow:0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4
+}
 
   .navButtons{
     text-decoration: none;
@@ -51,12 +70,21 @@ html {
 
   header, footer{
     margin: 0%;
-    grid-template-columns: 1fr 1fr;
-    background-color: teal;
+    grid-template-columns: 1fr 1fr 1fr;
+/*     background-image: url("https://img.freepik.com/premium-vector/dark-abstract-background-with-lines_79145-403.jpg"); */
+    background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
   }
+
+.header-heading{
+  display: flex;
+  justify-content : space-between;
+}
 footer {
-  background-color: #ccc;
+/*   background-color: #ccc; */
   padding: 20px;
+  color: white;
 }
 
 .footer-heading {
@@ -88,7 +116,7 @@ footer {
 
 .right-paragraph {
   margin-left: 20px;
-  color: black;
+  
 }
   button{
     border-radius: 4px;
@@ -102,6 +130,35 @@ footer {
     border-radius: 12px;
   }
 
+  .brand-page{
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .brand-category{
+    font-size: 22px;
+    font-weight: 200px;
+  }
+
+  .brand-twitter{
+    margin: 30px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url("https://wallpaper.dog/large/5486500.png");
+    border-radius: 12px;
+    width: 30%;
+  }
+
+  li{
+    font-size: 18px;
+    list-style: none;
+  }
+
   #cards{
     margin-top: 30px;
     display: grid;
@@ -110,6 +167,8 @@ footer {
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
   }
+
+  
 
   aside{
     overflow-y: scroll;
@@ -139,11 +198,15 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     z-index: 2;
   } */
-.title{
-   visibility: hidden;
- }
+
+  .title{
+    visibility: hidden;
+    font-size: 20px;
+    text-align: center;
+  }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+
 .card {
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 10px;
@@ -225,13 +288,8 @@ footer {
 
 #card3:hover{
   background-image: url("https://assets.juksy.com/files/articles/81577/1920x640_100_r-5b7bab7549e56.png");
-/*   object-fit: fill;
-  margin: auto; */
   background-size: cover;
   background-repeat: no-repeat;
-/*   background-position: right top; */
-/*   background-position: fill; */
-/*   background-size: fill-box;  */
 }
 
 #card4:hover{
@@ -239,21 +297,8 @@ footer {
 /*   object-fit: fill;
   margin: auto; */
   background-size: cover;
-  background-repeat: no-repeat;();
+  background-repeat: no-repeat;
   background-position: center;
-}
-
-.card h3,
-.card h4 {
-  margin: 0;
-  font-size: 1.1em;
-  font-weight: normal;
-  opacity: 0;
-}
-
-.card h4 {
-  font-size: .8em;
-  text-transform: uppercase;
 }
 
 .card a {
@@ -292,42 +337,24 @@ footer {
   height: 40px;
 }
 
-.card:hover h3,
-.card.hover h3,
-.card:hover h4,
-.card.hover h4 {
-  opacity: 3;
-}
-
-.card:hover h3,
-.card.hover h3 {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-.card:hover h4,
-.card.hover h4 {
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-
-
- .title{
-   display: hidden;
- }
-
   img {
   width: 400px;
   height: 300px;
   object-fit: fill;
   margin: auto;
+  display: flex;
  }
 
-  .title{
-    font-size: 20px;
-    text-align: center;
-  }
+#searchbar{
+  text-align: left;
+  margin: 20px 40px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+input[type=text]{
+  transition: width 0.15s ease-in-out;
+}
 
 .social-icons {
   text-align:right ;
@@ -340,33 +367,23 @@ footer {
 .social-icons a:hover i{
   color: black;
   
-  .social-icons2 {
-  text-align:right ;
-  margin: 10px;
-  color: black;
-  transition: color 0.3s ease;
-
 }
-
-.social-icons2 a:hover i{
-  color: white;
-    
-}
-  #searchbar{
+  .search-bar button{
     position: relative;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
   }
 
   .navButtons{
     font-family: Arial, Helvetica, san-serif;
   }
-
+  
   .center {
   display: block;
-  margin-left: auto;
+  margin-left:auto;
   margin-right: auto;
   width: 50%;
+  
   }
 
   a{
@@ -392,4 +409,55 @@ footer {
 
 .animated-text {
   animation-fill-mode:both;
+}
+
+.text{
+  color:white;
+}
+
+body {
+  background-color: #111;
+}
+
+/*   Search list start */
+ #list{
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+  display: none;
+ }
+
+  .listItem{
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+  }
+
+  .listItem:hover{
+    background-color: lightgrey;
+  }
+/*   Search list end */
+
+.h1{
+  font-style: italic;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+h4{
+  font-size:26px
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+body {
+  font-family: "Poppins", sans-serif;
 }

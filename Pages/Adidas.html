@@ -5,24 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Adidas Clothing</title>
-  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
 </head>
   
-<body>
-  <header>
+<body onload="loadSearchData()">
+  <header class=text>
     <div>
       <nav>
-        <a href=../index.html id=homepage>THE CLOTHING PORTAL</a>
+        <a href=../index.html id=homepage>
+          <h1>THE CLOTHING PORTAL</h1>
+        </a>
+    </div>
       </nav>  
     </div>
-    <div>
-      <form action="info.html" method="GET" id=searchbar>
-        SEARCH HERE: 
-        <input type="text" name="search here" placeholder="search" />
-        <input type="submit" value="search" />
-      </form>
+<!--       <div class="title">Clothing</div> -->
+    <div class="header-heading">
+      <div class="dropdown">
+        <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search here">
+    </div>
       <div class="social-icons">
-        <p>Follow Us!</p>
+        Follow Us!
         <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
       <i class="fab fa-instagram fa-2x"></i>
         </a>
@@ -32,14 +34,109 @@
       </div>
     </div>
   </header>
-
+  
   <main>
-    <section>Adidas Page</section>
+    
+  <section class=brand-page>
+      <figure >
+        <div>
+          <div class=brand-category>
+            <p>Mens</p>
+            <p>Men's Shoes</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/men-shoes">All Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/men-athletic_sneakers" >Sneakers</a></li>
+            <li><a href="https://www.adidas.com/us/men-running-shoes" >Running Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/men-soccer-shoes" >Soccer Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/men-slides" >Sandals/SLides</a></li>
+            <li><a href="https://www.adidas.com/us/men-workout-shoes" >Workout/Gym</a></li>
+            <li><a href="https://www.adidas.com/us/men-hiking-shoes" >Hiking</a></li>
+            <li><a href="https://www.adidas.com/us/men-basketball-shoes" >Basketball</a></li>
+            <li><a href="https://www.adidas.com/us/men-shoes?price=price%3C101.0" >Shoes Under $100</a></li>
+            <li><a href="https://www.adidas.com/us/men-golf-shoes" >Golf</a></li>
+            <li><a href="https://www.adidas.com/us/men-baseball-shoes" >Baseball</a></li>
+            <li><a href="https://www.adidas.com/us/men-football-cleats" >Football</a></li>
+          </ul>
+        </div>
+
+        <div class=brand-category>
+            <p>Men's Clothing</p>
+          </div>
+          <ul>
+          <li><a href="https://www.adidas.com/us/men-clothing" >All Clothing</a></li>
+          <li><a href="https://www.adidas.com/us/men-tops" >T-Shirts/Tops</a></li>
+          <li><a href="https://www.adidas.com/us/men-hoodies_sweatshirts" >Hoodies/Sweatshirts</a></li>
+          <li><a href="https://www.adidas.com/us/men-shorts" >Shorts</a></li>
+          <li><a href="https://www.adidas.com/us/men-pants" >Pants</a></li>
+          <li><a href="https://www.adidas.com/us/men-jackets" >Jackets</a></li>
+          <li><a href="https://www.adidas.com/us/men-track_suits" >Tracksuits</a></li>
+          <li><a href="https://www.adidas.com/us/men-matching_sets" >Matching Sets</a></li>
+          <li><a href="https://www.adidas.com/us/men-jerseys" >Jerseys</a></li>
+          <li><a href="https://www.adidas.com/us/men-tall" >Tall (6'0 and above)</a></li>
+        </ul>
+        </div>
+      </figure>
+      
+      <figure class=card id=card2>
+        <p class=title> PUMA </p>
+        <a href="./Pages/Puma.html"><img src="/Logos/Puma Logo.jpg" class="center"></a>
+        <a href="./Pages/Puma.html"></a>
+      </figure>
+      
+      <figure class=card id=card3>
+        <p class=title>NIKE</p>
+        <a href="./Pages/Nike.html"><img src="/Logos/Nike Logo.png" class=center></a>
+        <a href="./Pages/Nike.html"></a>
+      </figure>
+
+      <figure class=card id=card4>
+        <p class=title>THE NORTH FACE</p>
+        <a href="./Pages/North_Face.html"><img src="/Logos/The-North-Face-Logo.png" class=center></a>
+        <a href="./Pages/North_Face.html"></a>
+      </figure>
+    </section>
+
+    
   </main> 
+
+  <main class=brand-twitter>
+    <section>
+    <a class="twitter-timeline"
+      href="https://twitter.com/adidas"
+      data-width="100%"
+      data-height="450"
+      data-tweet-limit="7">
+      Tweets by @adidas
+    </a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+  </main>
   
   <footer>
-    <p style="color: white; text-align: center;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>
+     <div class="footer-heading">
+    <h1 class="left-heading">OUR MISSION</h1>
+    
+    <h1 class="right-heading">CONTACT US</h1>
+  </div>
+     <div class="footer-content">
+    <div class="left-paragraph">
+      <p>To distribute products of the highest quality and integrity, that exceeds customers expectations for service and dependability
+</p>
+    </div>
+    <div class="right-paragraph">
+     <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
+      <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/yourusername"style="color: white;"target="_blank">
+      <i class="fab fa-facebook fa-2x"></i>
+        </a> <p>+1 868-662-6002</p>
+    </div>
+  </div>
+    <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>
+    
   </footer>
-  
-  
+
 </body>
+  
+</html>

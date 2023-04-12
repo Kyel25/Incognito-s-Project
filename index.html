@@ -11,20 +11,21 @@
   
   
 <body>
-  <header>
+  <header class=text>
     <div>
       <nav>
-        <a href=index.html id=homepage>THE CLOTHING PORTAL</a>
+        <a href=index.html id=homepage>
+          <h1>THE CLOTHING PORTAL</h1>
+        </a>
+    </div>
       </nav>  
     </div>
-      <article>
-        <form action="info.html" method="GET" id=searchbar>
-        SEARCH HERE: 
-        <input type="text" name="search here" placeholder="search" />
-        <input type="submit" value="search" />
-      </form>
-      </article>
-      <article class="social-icons">
+<!--       <div class="title">Clothing</div> -->
+    <div class="header-heading">
+      <div class=searchbar>
+          <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search here">
+      </div>
+      <div class="social-icons">
         Follow Us!
         <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
       <i class="fab fa-instagram fa-2x"></i>
@@ -32,36 +33,27 @@
         <a href="https://www.facebook.com/yourusername"style="color: white;"target="_blank">
       <i class="fab fa-facebook fa-2x"></i>
         </a>
-      </article>
-      
+      </div>
+    </div>
   </header>
 
-  <main>
+  <main id=>
     <section id=siteInfo><p>
 
-  <h4 class="animated-text">The Clothing Portal is a premier online destination for fashion enthusiasts. Our website offers a wide variety of clothing brands, from luxury designers to emerging labels, all in one place. We believe that fashion should be accessible to everyone, and our curated selection of clothing ensures that there is something for every style and budget. With our user-friendly interface, customers can easily browse our extensive collection and find the perfect outfit for any occasion. From trendy streetwear to classic pieces, The Clothing Portal has it all. Shop with us today and elevate your wardrobe to new heights!
-  </h4>
+  <h4 id="fade-in">Discover the best brands from around the world, all in one place. Shop for high-quality, innovative, and socially responsible fashion that reflects your unique style.
     </section>
 
      </div>
 <section id=cards>
       <figure class=card id=card1>
-        <p class=title>ADIDAS</p>
+        <p class=title >ADIDAS</p>
         <a href="./Pages/Adidas.html"><img src="/Logos/Adidas Logo.png" class=center></a>
-        <figcaption>
-          <h3>Bodrum Salvador</h3>
-          <h4>Luxery</h4>
-        </figcaption>
-          <a href="./Pages/Adidas.html"></a>
+        <a href="./Pages/Adidas.html"></a>
       </figure>
       
       <figure class=card id=card2>
         <p class=title> PUMA </p>
         <a href="./Pages/Puma.html"><img src="/Logos/Puma Logo.jpg" class="center"></a>
-        <figcaption>
-          <h3>Bodrum Salvador</h3>
-          <h4>Luxery</h4>
-        </figcaption>
           <a href="./Pages/Puma.html"></a>
       </figure>
       
@@ -74,17 +66,13 @@
       <figure class=card id=card4>
         <p class=title>THE NORTH FACE</p>
         <a href="./Pages/North_Face.html"><img src="/Logos/The-North-Face-Logo.png" class=center></a>
-        <figcaption>
-          <h3>Bodrum Salvador</h3>
-          <h4>Luxery</h4>
-        </figcaption>
-          <a href="./Pages/North_Face.html"></a>
+        <a href="./Pages/North_Face.html"></a>
       </figure>
     </section>
   </main> 
   
   <footer>
-     <div class="footer-heading">
+     <div class="footer-heading" >
     <h1 class="left-heading">OUR MISSION</h1>
     
     <h1 class="right-heading">CONTACT US</h1>
@@ -94,7 +82,7 @@
       <p>To distribute products of the highest quality and integrity, that exceeds customers expectations for service and dependability
 </p>
     </div>
-    <div class="right-paragraph">
+    <div class="right-paragraph social-icons">
      <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
       <i class="fab fa-instagram fa-2x"></i>
         </a>
@@ -103,14 +91,10 @@
         </a> <p>+1 868-662-6002</p>
     </div>
   </div>
-    <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>
+  <!--  <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>  -->
   </footer>
   
-  
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
-
-<script>
-    
-</script>
 
 </html>
