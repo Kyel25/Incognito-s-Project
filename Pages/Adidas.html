@@ -8,21 +8,20 @@
   <link href="../style.css" rel="stylesheet" type="text/css"/>
 </head>
   
-<body onload="loadSearchData()">
+<body>
   <header class=text>
     <div>
       <nav>
         <a href=../index.html id=homepage>
           <h1>THE CLOTHING PORTAL</h1>
         </a>
-    </div>
       </nav>  
     </div>
-<!--       <div class="title">Clothing</div> -->
     <div class="header-heading">
-      <div class="dropdown">
-        <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search here">
-    </div>
+      <div class=searchbar>
+        <a href=../index.html><button class="button">Home</button></a>
+        <a href=../searchpage.html><button class="button">Search</button></a>
+      </div>
       <div class="social-icons">
         Follow Us!
         <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
@@ -38,18 +37,53 @@
   <main>
     
   <section class=brand-page>
-      <figure >
+    <figure class=category>
         <div>
           <div class=brand-category>
-            <p>Mens</p>
+            <p>Featured</p>
+            <p>New Arrivals</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.adidas.com/us/men-new_arrivals">Mens' New Arrival</a></li>
+            <li><a href="https://www.adidas.com/us/women-new_arrivals" >Womens' New Arrivals</a></li>
+            <li><a href="https://www.adidas.com/us/kids-boys-new_arrivals" >Boys' New Arrivals</a></li>
+            <li><a href="https://www.adidas.com/us/kids-girls-new_arrivals">Girls' New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Sales</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/men-sale" >All Mens' Sales</a></li>
+            <li><a href="https://www.adidas.com/us/girls-clothing" >All Girls' Clothing</a></li>
+            <li><a href="https://www.adidas.com/us/girls-accessories" >All Girls' Accessories</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class=brand-category>
+            <p>Baby/Toddlers</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/kids-infant_toddler" >Baby/Toddlers Shoes & Clothing</a></li>
+          </ul>
+        </div>
+      </figure>
+    
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Men</p>
             <p>Men's Shoes</p>
           </div>
           <ul>
-            <li><a href="https://www.adidas.com/us/men-shoes">All Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/men-shoes">All Men's Shoes</a></li>
             <li><a href="https://www.adidas.com/us/men-athletic_sneakers" >Sneakers</a></li>
             <li><a href="https://www.adidas.com/us/men-running-shoes" >Running Shoes</a></li>
             <li><a href="https://www.adidas.com/us/men-soccer-shoes" >Soccer Shoes</a></li>
-            <li><a href="https://www.adidas.com/us/men-slides" >Sandals/SLides</a></li>
+            <li><a href="https://www.adidas.com/us/men-slides" >Sandals/Slides</a></li>
             <li><a href="https://www.adidas.com/us/men-workout-shoes" >Workout/Gym</a></li>
             <li><a href="https://www.adidas.com/us/men-hiking-shoes" >Hiking</a></li>
             <li><a href="https://www.adidas.com/us/men-basketball-shoes" >Basketball</a></li>
@@ -60,11 +94,12 @@
           </ul>
         </div>
 
+        <div>
         <div class=brand-category>
             <p>Men's Clothing</p>
           </div>
           <ul>
-          <li><a href="https://www.adidas.com/us/men-clothing" >All Clothing</a></li>
+          <li><a href="https://www.adidas.com/us/men-clothing" >All Men's Clothing</a></li>
           <li><a href="https://www.adidas.com/us/men-tops" >T-Shirts/Tops</a></li>
           <li><a href="https://www.adidas.com/us/men-hoodies_sweatshirts" >Hoodies/Sweatshirts</a></li>
           <li><a href="https://www.adidas.com/us/men-shorts" >Shorts</a></li>
@@ -76,24 +111,121 @@
           <li><a href="https://www.adidas.com/us/men-tall" >Tall (6'0 and above)</a></li>
         </ul>
         </div>
-      </figure>
-      
-      <figure class=card id=card2>
-        <p class=title> PUMA </p>
-        <a href="./Pages/Puma.html"><img src="/Logos/Puma Logo.jpg" class="center"></a>
-        <a href="./Pages/Puma.html"></a>
-      </figure>
-      
-      <figure class=card id=card3>
-        <p class=title>NIKE</p>
-        <a href="./Pages/Nike.html"><img src="/Logos/Nike Logo.png" class=center></a>
-        <a href="./Pages/Nike.html"></a>
-      </figure>
 
-      <figure class=card id=card4>
-        <p class=title>THE NORTH FACE</p>
-        <a href="./Pages/North_Face.html"><img src="/Logos/The-North-Face-Logo.png" class=center></a>
-        <a href="./Pages/North_Face.html"></a>
+        <div>
+          <div class=brand-category>
+            <p>Men's Accessories</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/men-accessories" >All Men's Accessories</a></li>
+          <li><a href="https://www.adidas.com/us/men-bags" >Bags/Backpacks</a></li>
+            <li><a href="https://www.adidas.com/us/men-backpacks?price=price%3C50.0" >Backpacks Under $50</a></li>
+          <li><a href="https://www.adidas.com/us/balls" >Balls</a></li>
+          <li><a href="https://www.adidas.com/us/gloves" >Gloves</a></li>
+          <li><a href="https://www.adidas.com/us/men-hats" >Hats</a></li>
+          <li><a href="https://www.adidas.com/us/men-headphones" >Headphones</a></li>
+          <li><a href="https://www.adidas.com/us/men-socks" >Socks</a></li>
+          <li><a href="https://www.adidas.com/us/men-underwear" >Underwear</a></li>
+          <li><a href="https://www.adidas.com/us/water_bottles" >Water Bottles</a></li>
+        </ul>
+        </div>
+      </figure>
+      
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Women</p>
+            <p>Women's Shoes</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/women-shoes">All Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/women-athletic_sneakers" >Sneakers</a></li>
+            <li><a href="https://www.adidas.com/us/women-running-shoes" >Running Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/women-slides" >Sandals/Slides</a></li>
+            <li><a href="https://www.adidas.com/us/women-workout-shoes" >Workout/Gym</a></li>
+            <li><a href="https://www.adidas.com/us/women-shoes?price=price%3C101.0" >Shoes Under $100</a></li>
+            <li><a href="https://www.adidas.com/us/women-hiking-shoes" >Hiking</a></li>
+            <li><a href="https://www.adidas.com/us/women-soccer-shoes" >Soccer</a></li>
+            <li><a href="https://www.adidas.com/us/women-tennis-shoes" >Tennis</a></li>
+            <li><a href="https://www.adidas.com/us/women-platform">Platform Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/women-basketball-shoes" >Basketball</a></li>
+            <li><a href="https://www.adidas.com/us/women-golf-shoes" >Golf</a></li>
+            <li><a href="https://www.adidas.com/us/women-softball-cleats" >Softball</a></li>
+            <li><a href="https://www.adidas.com/us/women-volleyball-shoes" >Football</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Women's Clothing</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/women-clothing" >All Women's Clothing</a></li>
+            <li><a href="https://www.adidas.com/us/women-tops" >T-Shirts/Tops</a></li>
+            <li><a href="https://www.adidas.com/us/women-hoodies_sweatshirts" >Hoodies/Sweatshirts</a></li>
+            <li><a href="https://www.adidas.com/us/women-plus_size" >Plus Sizes</a></li>
+            <li><a href="https://www.adidas.com/us/women-tights_leggings" >Tights/Leggings</a></li>
+            <li><a href="https://www.adidas.com/us/women-shorts" >Shorts</a></li>
+            <li><a href="https://www.adidas.com/us/women-sports_bras" >Sports Bra</a></li>
+            <li><a href="https://www.adidas.com/us/women-pants" >Pants</a></li>
+            <li><a href="https://www.adidas.com/us/women-jackets" >Jackets</a></li>
+            <li><a href="https://www.adidas.com/us/women-track_suits" >Tracksuits</a></li>
+            <li><a href="https://www.adidas.com/us/women-matching_sets" >Matching Sets</a></li>
+            <li><a href="https://www.adidas.com/us/women-skirts_dresses" >Dresses/Skirts</a></li>
+            <li><a href="https://www.adidas.com/us/maternity" >Maternity</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class=brand-category>
+            <p>Women's Accessories</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/women-accessories" >All Women's Accessories</a></li>
+            <li><a href="https://www.adidas.com/us/women-bags" >Bags/Backpacks</a></li>
+            <li><a href="https://www.adidas.com/us/women-backpacks?price=price%3C50.0" >Backpacks Under $50</a></li>
+           <li><a href="https://www.adidas.com/us/balls" >Balls</a></li>
+            <li><a href="https://www.adidas.com/us/women-gloves" >Gloves</a></li>
+            <li><a href="https://www.adidas.com/us/women-hats%7Cheadbands" >Hats/Headbands</a></li>
+            <li><a href="https://www.adidas.com/us/women-headphones" >Headphones</a></li>
+            <li><a href="https://www.adidas.com/us/women-socks" >Socks</a></li>
+            <li><a href="https://www.adidas.com/us/water_bottles" >Water Bottles</a></li>
+          </ul>
+        </div>
+      </figure>
+      
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Kids</p>
+            <p>Boys</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/boys-shoes">All Boys' Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/boys-clothing" >All Boys' Clothing</a></li>
+            <li><a href="https://www.adidas.com/us/boys-accessories" >All Boys' Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Girls</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/girls-shoes" >All Girls' Shoes</a></li>
+            <li><a href="https://www.adidas.com/us/girls-clothing" >All Girls' Clothing</a></li>
+            <li><a href="https://www.adidas.com/us/girls-accessories" >All Girls' Accessories</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class=brand-category>
+            <p>Baby/Toddlers</p>
+          </div>
+          <ul>
+            <li><a href="https://www.adidas.com/us/kids-infant_toddler" >Baby/Toddlers Shoes & Clothing</a></li>
+          </ul>
+        </div>
       </figure>
     </section>
 
@@ -103,11 +235,11 @@
   <main class=brand-twitter>
     <section>
     <a class="twitter-timeline"
-      href="https://twitter.com/adidas"
+      href="https://twitter.com/adidasoriginals"
       data-width="100%"
       data-height="450"
       data-tweet-limit="7">
-      Tweets by @adidas
+      Tweets by @adidasoriginals
     </a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </section>

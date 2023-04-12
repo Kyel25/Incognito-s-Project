@@ -13,29 +13,23 @@ html {
     }     
 
     body{
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
     }
 
-    .card{
+    .card, .category{
       grid-column: span 2;
     }
   }
 
   body{
     display: fill;
-/*     background-color: #FFFFFF; */
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     height: 100%
     padding: 0;
     margin: 0;
     background-image: linear-gradient(to bottom right, black, grey, black, grey)
-/*       background-image: url("https://img.freepik.com/premium-vector/dark-abstract-background-with-lines_79145-403.jpg");
-/*     background-size: fill; */
-/*    background-repeat: no-repeat; */
-/*   background-position: center; */
-/*      background-color: #303030; */
   }
   
   nav{
@@ -49,7 +43,7 @@ html {
     text-decoration: none;
     font-size: 24px;
     font-weight: 500;
-    color: #222;
+    color: white;
     letter-spacing: 5px;
     cursor: pointer;
     text-transform: uppercase;
@@ -63,10 +57,6 @@ html {
               0 0 50px #03e9f4,
               0 0 100px #03e9f4
 }
-
-  .navButtons{
-    text-decoration: none;
-  }
 
   header, footer{
     margin: 0%;
@@ -143,7 +133,8 @@ footer {
 
   .brand-category{
     font-size: 22px;
-    font-weight: 200px;
+    font-weight:800;
+    font-style: italic;
   }
 
   .brand-twitter{
@@ -151,12 +142,18 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     background-image: url("https://wallpaper.dog/large/5486500.png");
     border-radius: 12px;
-    width: 30%;
+    width: 50%;
   }
+
+.category{
+  border-color: black;
+    border-width: 2px;
+}
 
   li{
     font-size: 18px;
     list-style: none;
+    padding: 1.5px;
   }
 
   #cards{
@@ -345,13 +342,6 @@ footer {
   display: flex;
  }
 
-#searchbar{
-  text-align: left;
-  margin: 20px 40px;
-  padding: 15px;
-  border-radius: 5px;
-}
-
 input[type=text]{
   transition: width 0.15s ease-in-out;
 }
@@ -368,15 +358,10 @@ input[type=text]{
   color: black;
   
 }
-  .search-bar button{
-    position: relative;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-  }
 
-  .navButtons{
+/*   .navButtons{
     font-family: Arial, Helvetica, san-serif;
-  }
+  } */
   
   .center {
   display: block;
@@ -419,26 +404,6 @@ body {
   background-color: #111;
 }
 
-/*   Search list start */
- #list{
-   border: 1px solid lightgrey;
-   border-radius: 5px;
-  display: none;
- }
-
-  .listItem{
-    display:flex;
-    flex-direction: column;
-    text-decoration: none;
-    padding: 5px 20px;
-    color: black;
-  }
-
-  .listItem:hover{
-    background-color: lightgrey;
-  }
-/*   Search list end */
-
 .h1{
   font-style: italic;
 }
@@ -460,4 +425,61 @@ h4{
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 20px;
+}
+
+.button:hover{
+  cursor:pointer;
+}
+
+#searchbar {
+  text-align: left;
+  margin: 20px 40px;
+  border-radius: 5px;
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 80%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#search-list {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#search-list li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: 0px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  margin-bottom: 2px;
+}
+
+#search-list li a:hover:not(.header) {
+  background-color: #c7c7c7; /* Add a hover effect to all links, except for headers */
+}
+
+.category-list li a{
+  text-decoration: none;
 }

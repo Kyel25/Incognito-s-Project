@@ -1,42 +1,19 @@
-function loadSearchData() {
-  // Data to be used in the searchbar
-  let countries = [
-    'Adidas',
-    'Puma',
-    'Nike',
-    'The North Face',
-  ];
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchbar');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("search-list");
+  li = ul.getElementsByTagName('li');
 
-  // Get the HTML element of the list
-let list = document.getElementById('list');
-// Add each data item as an <a> tag
-countries.forEach((country)=>{
-    let a = document.createElement("a");
-    a.innerText = country;
-    a.classList.add("listItem");
-    list.appendChild(a);
-})
-}
-
-function search(){
-  let listContainer = document.getElementbyID('list');
-  let listItems = document.getElementsbyClassName('listItem');
-  let input = document.getElementbyID('searchbar');
-  input = input.toLowerCase();
-
-  let noResults = true;
-for (i = 0; i < listItems.length; i++) { 
-    if (!listItems[i].innerHTML.toLowerCase().includes(input) || input === "") {
-        listItems[i].style.display="none";
-        continue;
-    }
-    else {
-        listItems[i].style.display="flex";
-        noResults = false; 
-    }
-  else {
-    listContainer.style.display = noResults ? "none" : "block";
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
   }
-}
-  
 }

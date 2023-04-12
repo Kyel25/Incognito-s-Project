@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width">
   <title>The Clothing Portal</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
   
-  
 <body>
-  <header class=text>
+ <header class=text>
     <div>
       <nav>
         <a href=index.html id=homepage>
@@ -22,7 +20,7 @@
     </div>
 <!--       <div class="title">Clothing</div> -->
     <div class="header-heading">
-      <div id=navButtons>
+      <div class=searchbar>
         <a href=.index.html><button class="button">Home</button></a>
         <a href=searchpage.html><button class="button">Search</button></a>
       </div>
@@ -38,39 +36,21 @@
     </div>
   </header>
 
-  <main id=>
-    <section id=siteInfo><p>
+  <main>
+    <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search for names..">
 
-  <h4 id="fade-in">Discover the best brands from around the world, all in one place. Shop for high-quality, innovative, and socially responsible fashion that reflects your unique style.
-    </section>
+    <ul id="search-list">
+      <li><a href="#">Adele</a></li>
+      <li><a href="#">Agnes</a></li>
 
-     </div>
-<section id=cards>
-      <figure class=card id=card1>
-        <p class=title >ADIDAS</p>
-        <a href="./Pages/Adidas.html"><img src="/Logos/Adidas Logo.png" class=center></a>
-        <a href="./Pages/Adidas.html"></a>
-      </figure>
-      
-      <figure class=card id=card2>
-        <p class=title> PUMA </p>
-        <a href="./Pages/Puma.html"><img src="/Logos/Puma Logo.jpg" class="center"></a>
-          <a href="./Pages/Puma.html"></a>
-      </figure>
-      
-      <figure class=card id=card3>
-        <p class=title>NIKE</p>
-        <a href="./Pages/Nike.html"><img src="/Logos/Nike Logo.png" class=center></a>
-        <a href="./Pages/Nike.html"></a>
-      </figure>
+      <li><a href="#">Billy</a></li>
+      <li><a href="#">Bob</a></li>
 
-      <figure class=card id=card4>
-        <p class=title>THE NORTH FACE</p>
-        <a href="./Pages/North_Face.html"><img src="/Logos/The-North-Face-Logo.png" class=center></a>
-        <a href="./Pages/North_Face.html"></a>
-      </figure>
-    </section>
-  </main> 
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Christina</a></li>
+      <li><a href="#">Cindy</a></li>
+      </ul>
+  </main>
   
   <footer>
      <div class="footer-heading" >
@@ -93,8 +73,29 @@
     </div>
   </div>
   <!--  <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>  -->
+<!--     <script src="script.js"></script> -->
   </footer>
+
+<!--   <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchbar');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("search-list");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script> -->
   
 </body>
-
-</html>
