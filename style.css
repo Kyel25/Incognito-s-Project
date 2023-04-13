@@ -20,6 +20,15 @@ html {
     .card, .category{
       grid-column: span 2;
     }
+
+    .brand-socials{
+      grid-template-columns: 1;
+      grid-template-rows: auto;
+    }
+
+    .brand-twitter, .fb-page, .brand-pinterest {
+      grid-column: span 4;
+    }
   }
 
   body{
@@ -38,24 +47,29 @@ html {
     grid-column: span 2;
   }
 
-  #homepage{
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 500;
-    color: white;
-    letter-spacing: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 1.5s;
+   #homepage{
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Gambetta", serif, Arial, Helvetica, san-serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
   }
 
 #homepage:hover {
-  color: #161516;
-  text-shadow:0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
 }
 
   header, footer{
@@ -116,7 +130,7 @@ footer {
   main{
     margin: 30px 20px;
     grid-template-rows: 1fr 5fr;
-    background-image: url("https://wallpaper.dog/large/5486500.png");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/015/735/689/non_2x/white-and-gray-color-background-illustration-background-can-be-used-in-cover-design-book-design-poster-cd-cover-flyer-website-backgrounds-or-advertising-vector.jpg");
     border-radius: 12px;
   }
 
@@ -131,18 +145,41 @@ footer {
     justify-content: center;
   }
 
+  .brand-heading{
+    text-align: center;
+  }
+
   .brand-category{
     font-size: 22px;
     font-weight:800;
     font-style: italic;
   }
 
-  .brand-twitter{
+  .brand-socials p{
+    padding: 10px 0px;
+    margin: 20px 700px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/015/735/689/non_2x/white-and-gray-color-background-illustration-background-can-be-used-in-cover-design-book-design-poster-cd-cover-flyer-website-backgrounds-or-advertising-vector.jpg");
+    grid-column: span 3;
+    text-align: center;
+    font-size: 18px;
+     font-family: inherit;
+  }
+
+.fb-page{
+  border-radius: 8px;
+}
+  .brand-socials{
     margin: 30px 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: url("https://wallpaper.dog/large/5486500.png");
+    background-image: none;
     border-radius: 12px;
-    width: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .twitter-timeline{
+    margin: 0px 5px;
   }
 
 .category{
@@ -163,6 +200,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
+    border-width: 2px;
+    border-color: red;
   }
 
   
@@ -177,24 +216,6 @@ footer {
     text-align: center;
     color:black;
   }
-
-/*   .card { 
-  margin-right: 5px;
-  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #fff;
-  width: 100%;
-  position: relative;
-  border-radius: 12px;
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
-  align-content: center;
-  }
-
-  .card:hover{
-    background-color: none;
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-  } */
 
   .title{
     visibility: hidden;
@@ -428,9 +449,9 @@ body {
 }
 
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: PaleGoldenRod;
   border: none;
-  color: white;
+  color: #242424;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -441,6 +462,31 @@ button {
 
 .button:hover{
   cursor:pointer;
+}
+button{
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+/* 	display: block;
+	margin: 20px auto; */
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 20px 30px;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* button {
+	color: midnightblue;
+	box-shadow: cadetblue;
+} */
+
+button:hover {
+	color:  rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
 }
 
 #searchbar {
@@ -462,6 +508,7 @@ button {
   list-style-type: none;
   padding: 0;
   margin: 0;
+/*   visibility: hidden; */
 }
 
 #search-list li a {
@@ -482,4 +529,44 @@ button {
 
 .category-list li a{
   text-decoration: none;
+  margin-left: -10px;
+}
+/* .slider-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.slider-text {
+  position: absolute;
+  left: -100%; 
+  top: 0;
+  white-space: nowrap;
+  animation: slide 15s linear infinite; */
+}
+
+/* @keyframes slide {
+  from {
+    left: -100%; 
+  }
+  to {
+    left: 100%; 
+  }
+} */
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* .hover-list {
+  cursor: pointer;
+  font-size:0vmin;
+  margin: auto;
+  font-weight: 200;
+  transition: font-weight 70ms ease-in-out;
+  text-align:left;
+} */
+
+.category-list>li:hover {
+  font-weight: 700;
 }

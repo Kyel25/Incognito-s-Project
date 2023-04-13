@@ -6,23 +6,25 @@
   <meta name="viewport" content="width=device-width">
   <title>Nike Clothing</title>
   <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="../slider.css" rel="stylesheet" type="text/css"/>
 </head>
   
 <body>
-  <header>
+  <header class=text>
     <div>
       <nav>
-        <a href=../index.html id=homepage>THE CLOTHING PORTAL</a>
+        <a href=../index.html id=homepage>
+          <h1>Apparel Emporium</h1>
+        </a>
       </nav>  
     </div>
-    <div>
-      <form action="info.html" method="GET" id=searchbar>
-        SEARCH HERE: 
-        <input type="text" name="search here" placeholder="search" />
-        <input type="submit" value="search" />
-      </form>
+    <div class="header-heading">
+      <div class=searchbar>
+        <a href=../index.html><button class="button">Home</button></a>
+        <a href=../searchpage.html><button class="button">Search</button></a>
+      </div>
       <div class="social-icons">
-        <p>Follow Us!</p>
+        Follow Us!
         <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
       <i class="fab fa-instagram fa-2x"></i>
         </a>
@@ -34,8 +36,297 @@
   </header>
 
   <main>
-    <section>Nike Page</section>
+
+<section> 
+    <div class="rt-container">
+    	<div class="col-rt-12">
+  <!-- Slider -->
+          <div id="slider">
+            <div class="slides">
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>test1</h2>
+                    <p>test</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=1600"> </div>
+              </div>
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://images.pexels.com/photos/1124466/pexels-photo-1124466.jpeg?auto=compress&cs=tinysrgb&w=1600"> </div>
+              </div>
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://static.nike.com/a/images/w_1920,c_limit/54e44803-255e-4f60-956a-98eba4177c30/image.jpg"> </div>
+              </div>
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&w=1600"> </div>
+              </div>
+            </div>
+            <div class="switch">
+              <ul>
+                <li>
+                  <div class="on"></div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+         </div> 
+	 </div>          
+</section>
+    
+<!--     <section class=brand-heading>Nike</section> -->
+    <section class=brand-page>
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Featured</p>
+            <p>New Arrivals</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/new-mens-3n82yznik1">Mens' New Releases</a></li>
+            <li><a href="https://www.nike.com/w/new-womens-3n82yz5e1x6" >Womens' New Releases</a></li>
+            <li><a href="https://www.nike.com/w/new-boys-1onraz3n82y" >Boys' New Releases</a></li>
+            <li><a href="https://www.nike.com/w/new-girls-3aqegz3n82y">Girls' New Releases</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Sales</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/mens-sale-3yaepznik1" >All Mens' Sales</a></li>
+            <li><a href="https://www.nike.com/w/womens-sale-3yaepz5e1x6" >All Womens' Sales</a></li>
+            <li><a href="https://www.nike.com/w/boys-sale-1onraz3yaep" >All Boys' Sales</a></li>
+            <li><a href="https://www.nike.com/w/girls-sale-3aqegz3yaep" >All Girls' Sales</a></li>
+          </ul>
+        </div>
+        
+      </figure>
+    
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Men</p>
+            <p>Men's Footwear</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/mens-shoes-nik1zy7ok">All Men's Footwear</a></li>
+            <li><a href="https://www.nike.com/w/mens-lifestyle-shoes-13jrmznik1zy7ok" >Lifestyle</a></li>
+            <li><a href="https://www.nike.com/w/mens-jordan-shoes-37eefznik1zy7ok" >Jordan</a></li>
+            <li><a href="https://www.nike.com/w/mens-air-max-shoes-a6d8hznik1zy7ok" >Air Max</a></li>
+            <li><a href="https://www.nike.com/w/mens-air-force-1-shoes-5sj3yznik1zy7ok" >Airforce 1</a></li>
+            <li><a href="https://www.nike.com/w/mens-90aohz9gw3aznik1" >Dunks/Blazers</a></li>
+            <li><a href="https://www.nike.com/w/mens-basketball-shoes-3glsmznik1zy7ok" >Basketball</a></li>
+            <li><a href="https://www.nike.com/w/mens-running-shoes-37v7jznik1zy7ok" >Running</a></li>
+            <li><a href="https://www.nike.com/w/mens-training-gym-shoes-58jtoznik1zy7ok" >Training/Gym</a></li>
+            <li><a href="https://www.nike.com/w/mens-soccer-shoes-1gdj0znik1zy7ok" >Soccer</a></li>
+            <li><a href="https://www.nike.com/w/mens-golf-shoes-23q9wznik1zy7ok" >Golf</a></li>
+            <li><a href="https://www.nike.com/w/mens-skateboarding-shoes-8mfrfznik1zy7ok" >Skateboarding</a></li>
+            <li><a href="https://www.nike.com/w/mens-nik1" >Slides</a></li>
+          </ul>
+        </div>
+
+        <div>
+        <div class=brand-category>
+            <p>Men's Clothing</p>
+          </div>
+          <ul class=category-list>
+          <li><a href="https://www.nike.com/w/mens-clothing-6ymx6znik1" >All Men's Clothing</a></li>
+          <li><a href="https://www.nike.com/w/mens-tracksuits-1ll2wznik1" >Tracksuits</a></li>
+          <li><a href="https://www.nike.com/w/mens-compression-baselayer-4pwbznik1" >Compression Shorts/Tights/Tops</a></li>
+          <li><a href="https://www.nike.com/w/mens-surf-swimwear-nik1zq3un" >Swimwear</a></li>
+          <li><a href="https://www.nike.com/w/mens-tops-t-shirts-9om13znik1" >Tops/T-Shirts</a></li>
+          <li><a href="https://www.nike.com/w/mens-hoodies-pullovers-6riveznik1" >Hoodies/Pullovers</a></li>
+          <li><a href="https://www.nike.com/w/mens-jackets-vests-50r7yznik1" >Jackets/Vests</a></li>
+          <li><a href="https://www.nike.com/w/mens-pants-tights-2kq19znik1" >Pants/Tights</a></li>
+          <li><a href="https://www.nike.com/w/mens-shorts-38fphznik1" >Shorts</a></li>
+          <li><a href="https://www.nike.com/w/mens-underwear-9yhm6znik1" >Underwear</a></li>
+          <li><a href="https://www.nike.com/w/socks-7ny3q" >Socks</a></li>
+        </ul>
+          
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Men's Accessories</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/mens-accessories-equipment-awwpwznik1" >All Men's Accessories</a></li>
+          <li><a href="https://www.nike.com/w/mens-accessories-equipment-awwpwznik1" >Bags/Backpacks</a></li>
+            <li><a href="https://www.nike.com/w/mens-belts-1oc40znik1" >Belts</a></li>
+          <li><a href="https://www.nike.com/w/mens-balls-580b1znik1" >Balls</a></li>
+          <li><a href="https://www.nike.com/w/mens-gloves-mitts-74gmrznik1" >Gloves</a></li>
+          <li><a href="https://www.nike.com/w/mens-hats-visors-headbands-52r49znik1" >Hats</a></li>
+          <li><a href="https://www.nike.com/w/mens-watches-2axv8znik1" >Watches</a></li>
+          <li><a href="https://www.nike.com/w/mens-yoga-mats-821geznik1" >Yoga Mats</a></li>
+          <li><a href="https://www.nike.com/w/mens-home-workout-gear-5s11tznik1" >Workout Gear</a></li>
+          <li><a href="https://www.nike.com/w/mens-pads-guards-protection-4jlpjznik1" >Pads, Guards, & Protection</a></li>
+            <li><a href="https://www.nike.com/w/mens-sleeves-arm-bands-amwfdznik1" >Sleeves & Armbands</a></li>
+            <li><a href="https://www.nike.com/w/mens-swim-goggles-caps-8g8n4znik1" >Swim Goggles & Caps</a></li>
+            <li><a href="https://www.nike.com/w/mens-sunglasses-arlypznik1" >Sunglasses</a></li>
+            <li><a href="https://www.nike.com/w/mens-water-bottles-hydration-8yveuznik1" >Water Bottles</a></li>
+        </ul>
+        </div>
+      </figure>
+      
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Women</p>
+            <p>Women's Footwear</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/womens-shoes-5e1x6zy7ok">All Womens' Footwear</a></li>
+            <li><a href="https://www.nike.com/w/womens-lifestyle-shoes-13jrmz5e1x6zy7ok" >Lifestyle</a></li>
+            <li><a href="https://www.nike.com/w/womens-running-shoes-37v7jz5e1x6zy7ok" >Running Shoes</a></li>
+            <li><a href="https://www.nike.com/w/womens-training-gym-shoes-58jtoz5e1x6zy7ok" >Training/Gym</a></li>
+            <li><a href="https://www.nike.com/w/womens-jordan-shoes-37eefz5e1x6zy7ok" >Jordan</a></li>
+            <li><a href="https://www.nike.com/w/womens-under-100-shoes-5e1x6zav8b2zy7ok" >Shoes Under $100</a></li>
+            <li><a href="https://www.nike.com/w/womens-track-field-shoes-5e1x6z7nem3zy7ok" >Track & Field</a></li>
+            <li><a href="https://www.nike.com/w/womens-soccer-shoes-1gdj0z5e1x6zy7ok" >Soccer</a></li>
+            <li><a href="https://www.nike.com/w/womens-tennis-shoes-5e1x6zed1qzy7ok" >Tennis</a></li>
+            <li><a href="https://www.nike.com/w/womens-walking-shoes-5e1x6zb3e0kzy7ok">Walking Shoes</a></li>
+            <li><a href="https://www.nike.com/w/womens-basketball-shoes-3glsmz5e1x6zy7ok" >Basketball</a></li>
+            <li><a href="https://www.nike.com/w/womens-golf-shoes-23q9wz5e1x6zy7ok" >Golf</a></li>
+            <li><a href="https://www.nike.com/w/womens-sandals-slides-5e1x6zfl76" >Sandals/Slides</a></li>
+            <li><a href="https://www.nike.com/w/womens-skateboarding-shoes-5e1x6z8mfrfzy7ok" >Skateboarding</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Women's Clothing</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/womens-clothing-5e1x6z6ymx6" >All Women's Clothing</a></li>
+            <li><a href="https://www.nike.com/w/womens-leggings-1evrhz5e1x6" >Leggings</a></li>
+            <li><a href="https://www.nike.com/w/womens-hoodies-pullovers-5e1x6z6rive" >Hoodies/Pullovers</a></li>
+            <li><a href="https://www.nike.com/w/womens-jackets-vests-50r7yz5e1x6" >Jackets/Vests</a></li>
+            <li><a href="https://www.nike.com/w/womens-pants-tights-2kq19z5e1x6" >Pants/Tights</a></li>
+            <li><a href="https://www.nike.com/w/womens-shorts-38fphz5e1x6" >Shorts</a></li>
+            <li><a href="https://www.nike.com/w/womens-sports-bras-40qgmz5e1x6" >Sports Bra</a></li>
+            <li><a href="https://www.nike.com/w/womens-tops-t-shirts-5e1x6z9om13" >Tops/T-Shirts</a></li>
+            <li><a href="https://www.nike.com/w/womens-compression-baselayer-4pwbz5e1x6" >Compression/Baselayer</a></li>
+            <li><a href="https://www.nike.com/w/womens-bodysuits-2a768z5e1x6" >Bodysuits</a></li>
+            <li><a href="https://www.nike.com/w/womens-jumpsuits-rompers-4w2rmz5e1x6" >Jumpsuits/Rompers</a></li>
+            <li><a href="https://www.nike.com/w/womens-skirts-dresses-5e1x6z8y3qp" >Dresses/Skirts</a></li>
+            <li><a href="https://www.nike.com/w/womens-tracksuits-1ll2wz5e1x6" >Tracksuits</a></li>
+            <li><a href="https://www.nike.com/w/womens-surf-swimwear-5e1x6zq3un" >Swimwear</a></li>
+            <li><a href="https://www.nike.com/w/womens-hijabs-5e1x6zl06h" >Hijabs</a></li>
+            <li><a href="https://www.nike.com/w/womens-socks-5e1x6z7ny3q" >Socks</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class=brand-category>
+            <p>Women's Accessories</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/womens-accessories-equipment-5e1x6zawwpw" >All Men's Accessories</a></li>
+          <li><a href="https://www.nike.com/w/womens-bags-and-backpacks-5e1x6z9xy71" >Bags/Backpacks</a></li>
+            <li><a href="https://www.nike.com/w/womens-belts-1oc40z5e1x6" >Belts</a></li>
+          <li><a href="https://www.nike.com/w/womens-balls-580b1z5e1x6" >Balls</a></li>
+          <li><a href="https://www.nike.com/w/womens-gloves-mitts-5e1x6z74gmr" >Gloves/Mitts</a></li>
+          <li><a href="https://www.nike.com/w/womens-hats-visors-headbands-52r49z5e1x6" >Hats/Visors/Headbands</a></li>
+          <li><a href="https://www.nike.com/w/womens-watches-2axv8z5e1x6" >Watches</a></li>
+          <li><a href="https://www.nike.com/w/womens-yoga-mats-5e1x6z821ge" >Yoga Mats</a></li>
+          <li><a href="https://www.nike.com/w/womens-home-workout-gear-5e1x6z5s11t" >Home Workout Gear</a></li>
+          <li><a href="https://www.nike.com/w/womens-pads-guards-protection-4jlpjz5e1x6" >Pads, Guards, & Protection</a></li>
+            <li><a href="https://www.nike.com/w/womens-sleeves-arm-bands-5e1x6zamwfd" >Sleeves & Armbands</a></li>
+            <li><a href="https://www.nike.com/w/womens-swim-goggles-caps-5e1x6z8g8n4" >Swim Goggles & Caps</a></li>
+            <li><a href="https://www.nike.com/w/womens-sunglasses-5e1x6zarlyp" >Sunglasses</a></li>
+            <li><a href="https://www.nike.com/w/womens-water-bottles-hydration-5e1x6z8yveu" >Water Bottles</a></li>
+          </ul>
+        </div>
+      </figure>
+      
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Kids</p>
+            <p>Boys</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/boys-shoes-1onrazy7ok">All Boys' Footwear</a></li>
+            <li><a href="https://www.nike.com/w/boys-clothing-1onraz6ymx6" >All Boys' Clothing</a></li>
+            <li><a href="https://www.nike.com/w/boys-accessories-equipment-1onrazawwpw" >All Boys' Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Girls</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/girls-shoes-3aqegzy7ok" >All Girls' Footwear</a></li>
+            <li><a href="https://www.nike.com/w/girls-clothing-3aqegz6ymx6" >All Girls' Clothing</a></li>
+            <li><a href="https://www.nike.com/w/girls-accessories-equipment-3aqegzawwpw" >All Girls' Accessories</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class=brand-category>
+            <p>Baby/Toddlers</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://www.nike.com/w/baby-toddler-kids-shoes-2j488zv4dhzy7ok" >Baby/Toddlers Footwear</a></li>
+            <li><a href="https://www.nike.com/w/baby-toddler-kids-clothing-2j488z6ymx6zv4dh" >Baby/Toddlers Clothing</a></li>
+            
+          </ul>
+        </div>
+      </figure>
+    </section>
   </main> 
+
+  <main class=brand-socials>
+    <section>
+    <a class="twitter-timeline"
+      href="https://twitter.com/nikestore"
+      data-width="500"
+      data-height="400"
+      data-tweet-limit="7">
+      Tweets by @nikestore
+    </a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+
+    <section>
+      <div class="fb-page" data-href="https://www.facebook.com/nikesportswear" data-tabs="timeline" data-width="500px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/adidasoriginals" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nikesportswear">Nike Sportswear</a></blockquote></div>
+<!--     <div id="fb-root"></div> -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="ZQ8BEAXj"></script>
+  </section>
+
+    <section class=brand-pinterest>
+      <a data-pin-do="embedUser" data-pin-board-width="500" data-pin-scale-height="300" data-pin-scale-width="80" href="https://www.pinterest.com/nike/"></a>
+      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    </section>
+  </main>
   
   <footer>
      <div class="footer-heading">
@@ -57,8 +348,10 @@
         </a> <p>+1 868-662-6002</p>
     </div>
   </div>
-    <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>
+    <script src="../script.js"></script>
   </footer>
   
   
 </body>
+
+</html>

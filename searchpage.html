@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>The Clothing Portal</title>
+  <title>Search Page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="search.js"></script>
 </head>
   
 <body>
@@ -13,7 +14,7 @@
     <div>
       <nav>
         <a href=index.html id=homepage>
-          <h1>THE CLOTHING PORTAL</h1>
+          <h1>Apparel Emporium</h1>
         </a>
     </div>
       </nav>  
@@ -37,18 +38,388 @@
   </header>
 
   <main>
-    <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search for names..">
+    <input type="text" id="searchbar" onfocus="makeVisible()" onkeyup="myFunction()" placeholder="Search for names..">
 
     <ul id="search-list">
-      <li><a href="#">Adele</a></li>
-      <li><a href="#">Agnes</a></li>
-
-      <li><a href="#">Billy</a></li>
-      <li><a href="#">Bob</a></li>
-
-      <li><a href="#">Calvin</a></li>
-      <li><a href="#">Christina</a></li>
-      <li><a href="#">Cindy</a></li>
+<!--       Adidas start -->
+      <li><a href="./Pages/Adidas.html">Adidas</a></li>
+<!--       Adidas Featured -->
+      <li><a href="https://www.adidas.com/us/men-new_arrivals">Adidas Featured - Men's New Arrivals</a></li>
+      <li><a href="https://www.adidas.com/us/women-new_arrivals" >Adidas Featured - Women's New Arrivals</a></li>
+      <li><a href="https://www.adidas.com/us/kids-boys-new_arrivals" >Adidas Featured - Boy's New Arrivals</a></li>
+      <li><a href="https://www.adidas.com/us/kids-girls-new_arrivals">Adidas Featured - Girl's New Arrivals</a></li>
+      <li><a href="https://www.adidas.com/us/men-sale" >Adidas Featured - All Men's Sales</a></li>
+      <li><a href="https://www.adidas.com/us/women-sale" >Adidas Featured - All Women's Sales</a></li>
+      <li><a href="https://www.adidas.com/us/boys-sale" >Adidas Featured - All Boy's Sales</a></li>
+      <li><a href="https://www.adidas.com/us/girls-sale" >Adidas Featured - All Girl's Sales</a></li>
+<!--       Adidas  Men Footwear -->
+      <li><a href="https://www.adidas.com/us/men-shoes">Adidas Men's Footwear - All Men's Footwear</a></li>
+      <li><a href="https://www.adidas.com/us/men-athletic_sneakers" >Adidas Men's Footwear Sneakers</a></li>
+      <li><a href="https://www.adidas.com/us/men-running-shoes" >Adidas Men's Footwear Running Shoes</a></li>
+      <li><a href="https://www.adidas.com/us/men-soccer-shoes" >Adidas Men's Footwear Soccer Cleats</a></li>
+      <li><a href="https://www.adidas.com/us/men-slides" >Adidas Men's Footwear Sandals/Slides</a></li>
+      <li><a href="https://www.adidas.com/us/men-workout-shoes" >Adidas Men's Footwear Workout/Gym</a></li>
+      <li><a href="https://www.adidas.com/us/men-hiking-shoes" >Adidas Men's Footwear Hiking</a></li>
+      <li><a href="https://www.adidas.com/us/men-basketball-shoes" >Adidas Men's Footwear Basketball</a></li>
+      <li><a href="https://www.adidas.com/us/men-shoes?price=price%3C101.0" >Adidas Men's Footwear Shoes Under $100</a></li>
+      <li><a href="https://www.adidas.com/us/men-golf-shoes" >Adidas Men's Footwear Golf</a></li>
+      <li><a href="https://www.adidas.com/us/men-baseball-shoes" >Adidas Men's Footwear Baseball</a></li>
+      <li><a href="https://www.adidas.com/us/men-football-cleats" >Adidas Men's Footwear Football</a></li>
+<!--       Adidas Men Clothing -->
+      <li><a href="https://www.adidas.com/us/men-clothing" >Adidas Men's Clothing - All Men's Clothing</a></li>
+      <li><a href="https://www.adidas.com/us/men-tops" >Adidas Men's Clothing - T-Shirts/Tops</a></li>
+      <li><a href="https://www.adidas.com/us/men-hoodies_sweatshirts" >Adidas Featured - Hoodies/Sweatshirts</a></li>
+      <li><a href="https://www.adidas.com/us/men-shorts" >Adidas Men's Clothing - Shorts</a></li>
+      <li><a href="https://www.adidas.com/us/men-pants" >Adidas Men's Clothing - Pants</a></li>
+      <li><a href="https://www.adidas.com/us/men-jackets" >Adidas Men's Clothing - Jackets</a></li>
+      <li><a href="https://www.adidas.com/us/men-track_suits" >Adidas Men's Clothing - Tracksuits</a></li>
+      <li><a href="https://www.adidas.com/us/men-matching_sets" >Adidas Men's Clothing - Matching Sets</a></li>
+      <li><a href="https://www.adidas.com/us/men-jerseys" >Adidas Men's Clothing - Jerseys</a></li>
+      <li><a href="https://www.adidas.com/us/men-tall" >Adidas Men's Clothing - Tall (6'0" and above)</a></li>
+<!--       Adidas Men Accessories -->
+      <li><a href="https://www.adidas.com/us/men-accessories" >Adidas Men's Accessories - All Men's Accessories</a></li>
+      <li><a href="https://www.adidas.com/us/men-bags" >Adidas Men's Accessories - Bags/Backpacks</a></li>
+      <li><a href="https://www.adidas.com/us/men-backpacks?price=price%3C50.0" >Adidas Men's Accessories - Backpacks Under $50</a></li>
+      <li><a href="https://www.adidas.com/us/balls" >Adidas Men's Accessories - Balls</a></li>
+      <li><a href="https://www.adidas.com/us/gloves" >Adidas Men's Accessories - Gloves</a></li>
+      <li><a href="https://www.adidas.com/us/men-hats" >Adidas Men's Accessories - Hats</a></li>
+      <li><a href="https://www.adidas.com/us/men-headphones" >Adidas Men's Accessories - Headphones</a></li>
+      <li><a href="https://www.adidas.com/us/men-socks" >Adidas Men's Accessories - Socks</a></li>
+      <li><a href="https://www.adidas.com/us/men-underwear" >Adidas Men's Accessories - Underwear</a></li>
+      <li><a href="https://www.adidas.com/us/water_bottles" >Adidas Men's Accessories - Water Bottles</a></li>
+<!--       Adidas Women Footwear -->
+      <li><a href="https://www.adidas.com/us/women-shoes">Adidas Women's Footwear - All Women's Shoes</a></li>
+      <li><a href="https://www.adidas.com/us/women-athletic_sneakers" >Adidas Women's Footwear - Sneakers</a></li>
+      <li><a href="https://www.adidas.com/us/women-running-shoes" >Adidas Women's Footwear - Running Shoes</a></li>
+      <li><a href="https://www.adidas.com/us/women-slides" >Adidas Women's Footwear - Sandals/Slides</a></li>
+      <li><a href="https://www.adidas.com/us/women-workout-shoes" >Adidas Women's Footwear - Workout/Gym</a></li>
+      <li><a href="https://www.adidas.com/us/women-shoes?price=price%3C101.0" >Adidas Women's Footwear - Shoes Under $100</a></li>
+      <li><a href="https://www.adidas.com/us/women-hiking-shoes" >Adidas Women's Footwear - Hiking</a></li>
+      <li><a href="https://www.adidas.com/us/women-soccer-shoes" >Adidas Women's Footwear - Soccer</a></li>
+      <li><a href="https://www.adidas.com/us/women-tennis-shoes" >Adidas Women's Footwear - Tennis</a></li>
+      <li><a href="https://www.adidas.com/us/women-platform">Adidas Women's Footwear - Platform Shoes</a></li>
+      <li><a href="https://www.adidas.com/us/women-basketball-shoes" >Adidas Women's Footwear - Basketball</a></li>
+      <li><a href="https://www.adidas.com/us/women-golf-shoes" >Adidas Women's Footwear - Golf</a></li>
+      <li><a href="https://www.adidas.com/us/women-softball-cleats" >Adidas Women's Footwear - Softball</a></li>
+      <li><a href="https://www.adidas.com/us/women-volleyball-shoes" >Adidas Women's Footwear - Volleyball</a></li>
+<!--       Adidas Women's Clothing -->
+      <li><a href="https://www.adidas.com/us/women-clothing" >Adidas Women's Clothing - All Women's Clothing</a></li>
+      <li><a href="https://www.adidas.com/us/women-tops" >Adidas Women's Clothing - T-Shirts/Tops</a></li>
+      <li><a href="https://www.adidas.com/us/women-hoodies_sweatshirts" >Adidas Women's Clothing - Hoodies/Sweatshirts</a></li>
+      <li><a href="https://www.adidas.com/us/women-plus_size" >Adidas Women's Clothing - Plus Sizes</a></li>
+      <li><a href="https://www.adidas.com/us/women-tights_leggings" >Adidas Women's Clothing - Tights/Leggings</a></li>
+      <li><a href="https://www.adidas.com/us/women-shorts" >Adidas Women's Clothing - Shorts</a></li>
+      <li><a href="https://www.adidas.com/us/women-sports_bras" >Adidas Women's Clothing - Sports Bra</a></li>
+      <li><a href="https://www.adidas.com/us/women-pants" >Adidas Women's Clothing - Pants</a></li>
+      <li><a href="https://www.adidas.com/us/women-jackets" >Adidas Women's Clothing - Jackets</a></li>
+      <li><a href="https://www.adidas.com/us/women-track_suits" >Adidas Women's Clothing - Tracksuits</a></li>
+      <li><a href="https://www.adidas.com/us/women-matching_sets" >Adidas Women's Clothing - Matching Sets</a></li>
+      <li><a href="https://www.adidas.com/us/women-skirts_dresses" >Adidas Women's Clothing - Dresses/Skirts</a></li>
+      <li><a href="https://www.adidas.com/us/maternity" >Adidas Women's Clothing - Maternity</a></li>
+<!--       Adidas Women Accessories          -->
+      <li><a href="https://www.adidas.com/us/women-accessories" >Adidas Women's Accessories - All Women's Accessories</a></li>
+      <li><a href="https://www.adidas.com/us/women-bags" >Adidas Women's Accessories - Bags/Backpacks</a></li>
+      <li><a href="https://www.adidas.com/us/women-backpacks?price=price%3C50.0" >Adidas Women's Accessories - Backpacks Under $50</a></li>
+      <li><a href="https://www.adidas.com/us/balls" >Adidas Women's Accessories - Balls</a></li>
+      <li><a href="https://www.adidas.com/us/women-gloves" >Adidas Women's Accessories - Gloves</a></li>
+      <li><a href="https://www.adidas.com/us/women-hats%7Cheadbands" >Adidas Women's Accessories - Hats/Headbands</a></li>
+      <li><a href="https://www.adidas.com/us/women-headphones" >Adidas Women's Accessories - Headphones</a></li>
+      <li><a href="https://www.adidas.com/us/women-socks" >Adidas Women's Accessories - Socks</a></li>
+      <li><a href="https://www.adidas.com/us/water_bottles" >Adidas Women's Accessories - Water Bottles</a></li>
+<!--       Adidas Boys -->
+      <li><a href="https://www.adidas.com/us/boys-shoes">Adidas Boys - All Boys' Footwear</a></li>
+      <li><a href="https://www.adidas.com/us/boys-clothing" >Adidas Boys - All Boys' Clothing</a></li>
+      <li><a href="https://www.adidas.com/us/boys-accessories" >Adidas Boys - All Boys' Accessories</a></li>
+<!--        Adidas Girls    -->
+      <li><a href="https://www.adidas.com/us/girls-shoes" >Adidas Girls - All Girls' Footwear</a></li>
+      <li><a href="https://www.adidas.com/us/girls-clothing" >Adidas Girls - All Girls' Clothing</a></li>
+      <li><a href="https://www.adidas.com/us/girls-accessories" >Adidas Girls - All Girls' Accessories</a></li>
+<!--        Adidas Toddlers    -->
+      <li><a href="https://www.adidas.com/us/kids-infant_toddler" >Adidas Baby/Toddlers - Baby/Toddlers Footwear & Clothing</a></li>
+<!--       Puma start -->
+      <li><a href="./Pages/Puma.html">Puma</a></li>
+<!--       Puma Featured -->
+      <li><a href="https://us.puma.com/us/en/men/new-arrivals">Puma Featured - Mens' New Arrivals</a></li>
+            <li><a href="https://us.puma.com/us/en/women/new-arrivals" >Puma Featured - Womens' New Arrivals</a></li>
+           <li><a href="https://us.puma.com/us/en/kids/new-arrivals">Puma Featured - Kid's New Arrivals</a></li>
+     <li><a href=https://us.puma.com/us/en/sale/mens-sale >Puma Featured - All Mens Sales</a></li>
+            <li><a href=https://us.puma.com/us/en/sale/womens-sale>Puma Featured - All Womens Sales</a></li>
+            <li><a href=https://us.puma.com/us/en/sale/kids-sale >Puma Featured - All Kids Sales</a></li>
+             <li><a href=https://us.puma.com/us/en/sale/sports >Puma Featured - All Sport Sales</a></li> 
+<!--       Puma Mens Footwear-->
+      <li><a href="https://us.puma.com/us/en/men/shoes">Puma Mens Footwear - All Men's Shoes</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/classics" >Puma Mens Footwear - Classics</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/suede-mens-sneakers" >Puma Mens Footwear - Suede</a></a></li>
+            <li><a href="https://us.puma.com/us/en/men/mens-rs-collection" >Puma Mens Footwear - RS Collection</a></li>
+            <li><a href="https://us.puma.com/us/en/collections/lifestyle/puma-rider-pack/mens-rider-pack" >Puma Mens Footwear - Rider Pack</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/slipstream" >Puma Mens Footwear - Slipstream</a></li>
+           <li><a href="https://us.puma.com/us/en/men/shoes/lifestyle">Puma Mens Footwear - Lifestyle</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/training-and-gym" >Puma Mens Footwear - Train and Gym</a></a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/running" >Puma Mens Footwear - Running</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/basketball" >Puma Mens Footwear - Basketball</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/skate-shoes" >Puma Mens Footwear - Skate</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/motorsport" >Puma Mens Footwear - Motorsport</a></li>
+           <li><a href="https://us.puma.com/us/en/men/shoes/soccer" >Puma Mens Footwear - Soccer</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/slides-and-sandals" >Puma Mens Footwear - Slides and Sandals</a></li>
+            
+            <li><a href="https://us.puma.com/us/en/puma/shop-all-mids?pref_gender=Men" >Puma Mens Footwear - Boots and Mids</a></li>
+<!--             Puma Men's Clothing -->
+      <li><a href="https://us.puma.com/us/en/men/clothing" >Puma Men's Clothing - All Men's Clothing</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/classics" >Puma Men's Clothing - Classics</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/hoodies-and-sweatshirts" >Puma Men's Clothing - Hoodies/Sweatshirts</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/t-shirts-and-tops" >Puma Men's Clothing - T-Shirts and Tops</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/polos" >Puma Men's Clothing - Polos</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/shorts" >Puma Men's Clothing - Shorts</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/tracksuits" >Puma Men's Clothing - Tracksuits</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/pants" >Puma Men's Clothing - Pants</a></li>
+          <li><a href="https://us.puma.com/us/en/mens/clothing/jackets-and-outerwear" >Puma Men's Clothing - Jackets and Outerwear</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/soccer-jerseys" >Puma Men's Clothing - Team Jerseys</a></li>
+            <li><a href="https://us.puma.com/us/en/men/clothing/loungewear" >Puma Men's Clothing - Loungewear</a></li>
+            <li><a href="https://us.puma.com/us/en/puma/co-ords/mens-co-ords" >Puma Men's Clothing - Mens Matching SETS</a></li>
+            <li><a href="https://us.puma.com/us/en/men/clothing/big-and-tall" >Puma Men's Clothing - Big and Tall</a></li>
+<!--       Puma Men's Accessories -->
+      <li><a href="https://us.puma.com/us/en/men/accessories" >Puma Men's Accessories - All Men's Accessories</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/hats" >Puma Men's Accessories - Hats</a></li>
+            <li><a href="https://us.puma.com/us/en/men/accessories/socks-and-underwear" >Puma Men's Accessories - Socks and Underwear</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/bags-and-backpacks" >Puma Men's Accessories - Bags and Backpacks</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/face-masks" >Puma Men's Accessories - Face Masks and Gaiters</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/watches" >Puma Men's Accessories - Watches</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/sunglasses" >Puma Men's Accessories - Sunglasses</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/sports-equipment" >Puma Men's Accessories - Sports Equipment</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/sports-equipment/soccer-balls" >Puma Men's Accessories - Soccer Balls</a></li>
+<!--            Puma Women's Footwear -->
+      <li><a href="https://us.puma.com/us/en/women/shoes">Puma's Women's Footwear - All Shoes</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/suede-womens-sneakers" >Puma's Women's Footwear - Suede</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/cali" >Puma's Women's Footwear - Cali</a></li>
+            <li><a href="https://us.puma.com/us/en/women/womens-rs-collection" >Puma's Women's Footwear - RS collection</a></li>
+            <li><a href="https://us.puma.com/us/en/collections/lifestyle/puma-rider-pack/womens-rider-pack" >Puma's Women's Footwear - Rider Pack</a></li>
+            <li><a href="https://us.puma.com/us/en/womens/classics/mayze" >Puma's Women's Footwear - Mayze</a></a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/lifestyle" >Puma's Women's Footwear - Lifestyle</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/training-and-gym" >Puma's Women's Footwear - Lifestyle and Gym</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/running" >Puma's Women's Footwear - Running</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/basketball">Puma's Women's Footwear - Basketball</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/motorsport" >Puma's Women's Footwear - Motorsport</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/slides-and-sandals" >Puma's Women's Footwear - Slides and Sandals</a></li>
+            <li><a href="https://us.puma.com/us/en/puma/shop-all-mids?pref_gender=Women" >Puma's Women's Footwear - Boots and Mids</a></li>
+<!--       Puma Women's Clothing -->
+      <li><a href="https://us.puma.com/us/en/women/clothing" >Puma Women's Clothing - All Women's Clothing</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/classics" >Puma Women's Clothing - Classics</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/hoodies-and-sweatshirts" >Puma Women's Clothing - Hoodies and Sweatshirts</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/t-shirts-and-tops" >Puma Women's Clothing - T-Shirts and Tops</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/leggings" >Puma Women's Clothing - Leggings</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/dresses-and-skirts" >Puma Women's Clothing - Dresses and Skirts</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/shorts" >Puma Women's Clothing - Shorts</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/bras" >Puma Women's Clothing - Bras</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/tracksuits" >Puma Women's Clothing - Tracksuits</a></li>
+            <li><a href="https://us.puma.com/us/en/womens/clothing/jackets-and-outerwear" >Puma Women's Clothing - Jackets and Outerwear</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/pants" >Puma Women's Clothing - Pants</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/loungewear">Puma Women's Clothing - Loungewear</a></li>
+ <li><a href="https://us.puma.com/us/en/puma/matching-sets/womens-matching-sets">Puma Women's Clothing - Matching Sets</a></li>
+ <li><a href="https://us.puma.com/us/en/women/clothing/plus-size">Puma Women's Clothing - Plus Size</a></li>
+<li><a href="https://us.puma.com/us/en/women/clothing/maternity">Puma Women's Clothing - Maternity</a></li>
+<!--       Puma Women's Accessories -->
+      <li><a href="https://us.puma.com/us/en/women/accessories" >Puma Women's Accessories - All Women's Accessories</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/bags-and-backpacks" >Puma Women's Accessories - Bags and Backpacks</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/hats" >Puma Women's Accessories - Hats</a></li>
+           <li><a href="https://us.puma.com/us/en/women/accessories/socks" >Puma Women's Accessories - Socks</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/face-masks" >Puma Women's Accessories - Face Masks and Gaiters</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/watches" >Puma Women's Accessories - Watches</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/sunglasses" >Puma Women's Accessories - Sunglasses</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/sports-equipment" >Puma Women's Accessories - Sports Equipment</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/sports-equipment/soccer-balls" >Puma Women's Accessories - Soccer Balls</a></li>
+<!--       Puma Boy's Products-->
+      <li><a href="https://us.puma.com/us/en/kids/boys/clothing" >Puma Boy's - All Boys' Clothing</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/boys/accessories" >Puma Boy's - All Boys' Accessories</a></li>
+             <li><a href="https://us.puma.com/us/en/kids/boys/sport" >Puma Boy's - All Boys' Sport</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/boys/shoes">Puma Boy's - All Boys' Footwear</a></li>
+<!--       Puma Girl's Products -->
+      <li><a href="https://us.puma.com/us/en/kids/girls/clothing" >Puma Girl's - All Girls' Clothing</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/girls/accessories" >Puma Girl's - All Girls' Accessories</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/girls/sport" >Puma Girl's - All Girls' Sport</a></li>
+             <li><a href="https://us.puma.com/us/en/kids/girls/shoes" >Puma Girl's - All Girls' Footwear</a></li>
+<!--       Puma Baby's/Infant's Products -->
+       <li><a href="https://us.puma.com/us/en/kids-shop-by-size-clothing" >Puma Baby/Infant's - Baby/Infant Clothing</a></li>           
+            <li><a href="https://us.puma.com/us/en/kids-shop-by-size-shoes" >Puma Baby/Infant's - Baby/Infant Footwear</a></li>
+      <!--     Nike Start   -->
+      <li><a href="./Pages/Nike.html">Nike</a></li>
+<!--       Nike Featured -->
+      <li><a href="https://www.nike.com/w/new-mens-3n82yznik1">Nike Featured - Mens' New Releases</a></li>
+            <li><a href="https://www.nike.com/w/new-womens-3n82yz5e1x6" >Nike Featured - Womens' New Releases</a></li>
+            <li><a href="https://www.nike.com/w/new-boys-1onraz3n82y" >Nike Featured - Boys' New Releases</a></li>
+            <li><a href="https://www.nike.com/w/new-girls-3aqegz3n82y">Nike Featured - Girls' New Releases</a></li>
+      <li><a href="https://www.nike.com/w/mens-sale-3yaepznik1" >Nike Featured - All Mens' Sales</a></li>
+            <li><a href="https://www.nike.com/w/womens-sale-3yaepz5e1x6" >Nike Featured - All Womens' Sales</a></li>
+            <li><a href="https://www.nike.com/w/boys-sale-1onraz3yaep" >Nike Featured - All Boys' Sales</a></li>
+            <li><a href="https://www.nike.com/w/girls-sale-3aqegz3yaep" >Nike Featured - All Girls' Sales</a></li>
+<!--       Nike Men's Footwear -->
+      <li><a href="https://www.nike.com/w/mens-shoes-nik1zy7ok">Nike Men's Footwear - All Men's Footwear</a></li>
+            <li><a href="https://www.nike.com/w/mens-lifestyle-shoes-13jrmznik1zy7ok" >Nike Men's Footwear - Lifestyle</a></li>
+            <li><a href="https://www.nike.com/w/mens-jordan-shoes-37eefznik1zy7ok" >Nike Men's Footwear - Jordan</a></li>
+            <li><a href="https://www.nike.com/w/mens-air-max-shoes-a6d8hznik1zy7ok" >Nike Men's Footwear - Air Max</a></li>
+            <li><a href="https://www.nike.com/w/mens-air-force-1-shoes-5sj3yznik1zy7ok" >Nike Men's Footwear - Airforce 1</a></li>
+            <li><a href="https://www.nike.com/w/mens-90aohz9gw3aznik1" >Nike Men's Footwear - Dunks/Blazers</a></li>
+            <li><a href="https://www.nike.com/w/mens-basketball-shoes-3glsmznik1zy7ok" >Nike Men's Footwear - Basketball</a></li>
+            <li><a href="https://www.nike.com/w/mens-running-shoes-37v7jznik1zy7ok" >Nike Men's Footwear - Running</a></li>
+            <li><a href="https://www.nike.com/w/mens-training-gym-shoes-58jtoznik1zy7ok" >Nike Men's Footwear - Training/Gym</a></li>
+            <li><a href="https://www.nike.com/w/mens-soccer-shoes-1gdj0znik1zy7ok" >Nike Men's Footwear - Soccer</a></li>
+            <li><a href="https://www.nike.com/w/mens-golf-shoes-23q9wznik1zy7ok" >Nike Men's Footwear - Golf</a></li>
+            <li><a href="https://www.nike.com/w/mens-skateboarding-shoes-8mfrfznik1zy7ok" >Nike Men's Footwear - Skateboarding</a></li>
+            <li><a href="https://www.nike.com/w/mens-nik1" >Nike Men's Footwear - Slides</a></li>
+<!--       Nike Men's Clothing -->
+      <li><a href="https://www.nike.com/w/mens-clothing-6ymx6znik1" >Nike Men's Clothing - All Men's Clothing</a></li>
+          <li><a href="https://www.nike.com/w/mens-tracksuits-1ll2wznik1" >Nike Men's Clothing - Tracksuits</a></li>
+          <li><a href="https://www.nike.com/w/mens-compression-baselayer-4pwbznik1" >Nike Men's Clothing - Compression Shorts/Tights/Tops</a></li>
+          <li><a href="https://www.nike.com/w/mens-surf-swimwear-nik1zq3un" >Nike Men's Clothing - Swimwear</a></li>
+          <li><a href="https://www.nike.com/w/mens-tops-t-shirts-9om13znik1" >Nike Men's Clothing - Tops/T-Shirts</a></li>
+          <li><a href="https://www.nike.com/w/mens-hoodies-pullovers-6riveznik1" >Nike Men's Clothing - Hoodies/Pullovers</a></li>
+          <li><a href="https://www.nike.com/w/mens-jackets-vests-50r7yznik1" >Nike Men's Clothing - Jackets/Vests</a></li>
+          <li><a href="https://www.nike.com/w/mens-pants-tights-2kq19znik1" >Nike Men's Clothing - Pants/Tights</a></li>
+          <li><a href="https://www.nike.com/w/mens-shorts-38fphznik1" >Nike Men's Clothing - Shorts</a></li>
+          <li><a href="https://www.nike.com/w/mens-underwear-9yhm6znik1" >Nike Men's Clothing - Underwear</a></li>
+          <li><a href="https://www.nike.com/w/socks-7ny3q" >Nike Men's Clothing - Socks</a></li>
+<!--       Nike Men's Accessories -->
+      <li><a href="https://www.nike.com/w/mens-accessories-equipment-awwpwznik1" >Nike Men's Accessories - All Men's Accessories</a></li>
+          <li><a href="https://www.nike.com/w/mens-accessories-equipment-awwpwznik1" >Nike Men's Accessories - Bags/Backpacks</a></li>
+            <li><a href="https://www.nike.com/w/mens-belts-1oc40znik1" >Nike Men's Accessories - Belts</a></li>
+          <li><a href="https://www.nike.com/w/mens-balls-580b1znik1" >Nike Men's Accessories - Balls</a></li>
+          <li><a href="https://www.nike.com/w/mens-gloves-mitts-74gmrznik1" >Nike Men's Accessories - Gloves</a></li>
+          <li><a href="https://www.nike.com/w/mens-hats-visors-headbands-52r49znik1" >Nike Men's Accessories - Hats</a></li>
+          <li><a href="https://www.nike.com/w/mens-watches-2axv8znik1" >Nike Men's Accessories - Watches</a></li>
+          <li><a href="https://www.nike.com/w/mens-yoga-mats-821geznik1" >Nike Men's Accessories - Yoga Mats</a></li>
+          <li><a href="https://www.nike.com/w/mens-home-workout-gear-5s11tznik1" >Nike Men's Accessories - Workout Gear</a></li>
+          <li><a href="https://www.nike.com/w/mens-pads-guards-protection-4jlpjznik1" >Nike Men's Accessories - Pads, Guards, & Protection</a></li>
+            <li><a href="https://www.nike.com/w/mens-sleeves-arm-bands-amwfdznik1" >Nike Men's Accessories - Sleeves & Armbands</a></li>
+            <li><a href="https://www.nike.com/w/mens-swim-goggles-caps-8g8n4znik1" >Nike Men's Accessories - Swim Goggles & Caps</a></li>
+            <li><a href="https://www.nike.com/w/mens-sunglasses-arlypznik1" >Nike Men's Accessories - Sunglasses</a></li>
+            <li><a href="https://www.nike.com/w/mens-water-bottles-hydration-8yveuznik1" >Nike Men's Accessories - Water Bottles</a></li>
+<!--       Nike Women's Footwear -->
+      <li><a href="https://www.nike.com/w/womens-shoes-5e1x6zy7ok">Nike Women's Footwear - All Womens' Footwear</a></li>
+            <li><a href="https://www.nike.com/w/womens-lifestyle-shoes-13jrmz5e1x6zy7ok" >Nike Women's Footwear - Lifestyle</a></li>
+            <li><a href="https://www.nike.com/w/womens-running-shoes-37v7jz5e1x6zy7ok" >Nike Women's Footwear - Running Shoes</a></li>
+            <li><a href="https://www.nike.com/w/womens-training-gym-shoes-58jtoz5e1x6zy7ok" >Nike Women's Footwear - Training/Gym</a></li>
+            <li><a href="https://www.nike.com/w/womens-jordan-shoes-37eefz5e1x6zy7ok" >Nike Women's Footwear - Jordan</a></li>
+            <li><a href="https://www.nike.com/w/womens-under-100-shoes-5e1x6zav8b2zy7ok" >Nike Women's Footwear - Shoes Under $100</a></li>
+            <li><a href="https://www.nike.com/w/womens-track-field-shoes-5e1x6z7nem3zy7ok" >Nike Women's Footwear - Track & Field</a></li>
+            <li><a href="https://www.nike.com/w/womens-soccer-shoes-1gdj0z5e1x6zy7ok" >Nike Women's Footwear - Soccer</a></li>
+            <li><a href="https://www.nike.com/w/womens-tennis-shoes-5e1x6zed1qzy7ok" >Nike Women's Footwear - Tennis</a></li>
+            <li><a href="https://www.nike.com/w/womens-walking-shoes-5e1x6zb3e0kzy7ok">Nike Women's Footwear - Walking Shoes</a></li>
+            <li><a href="https://www.nike.com/w/womens-basketball-shoes-3glsmz5e1x6zy7ok" >Nike Women's Footwear - Basketball</a></li>
+            <li><a href="https://www.nike.com/w/womens-golf-shoes-23q9wz5e1x6zy7ok" >Nike Women's Footwear - Golf</a></li>
+            <li><a href="https://www.nike.com/w/womens-sandals-slides-5e1x6zfl76" >Nike Women's Footwear - Sandals/Slides</a></li>
+            <li><a href="https://www.nike.com/w/womens-skateboarding-shoes-5e1x6z8mfrfzy7ok" >Nike Women's Footwear - Skateboarding</a></li>
+<!--       Nike Women's Clothing -->
+      <li><a href="https://www.nike.com/w/womens-clothing-5e1x6z6ymx6" >Nike Women's Clothing - All Women's Clothing</a></li>
+            <li><a href="https://www.nike.com/w/womens-leggings-1evrhz5e1x6" >Nike Women's Clothing - Leggings</a></li>
+            <li><a href="https://www.nike.com/w/womens-hoodies-pullovers-5e1x6z6rive" >Nike Women's Clothing - Hoodies/Pullovers</a></li>
+            <li><a href="https://www.nike.com/w/womens-jackets-vests-50r7yz5e1x6" >Nike Women's Clothing - Jackets/Vests</a></li>
+            <li><a href="https://www.nike.com/w/womens-pants-tights-2kq19z5e1x6" >Nike Women's Clothing - Pants/Tights</a></li>
+            <li><a href="https://www.nike.com/w/womens-shorts-38fphz5e1x6" >Nike Women's Clothing - Shorts</a></li>
+            <li><a href="https://www.nike.com/w/womens-sports-bras-40qgmz5e1x6" >Nike Women's Clothing - Sports Bra</a></li>
+            <li><a href="https://www.nike.com/w/womens-tops-t-shirts-5e1x6z9om13" >Nike Women's Clothing - Tops/T-Shirts</a></li>
+            <li><a href="https://www.nike.com/w/womens-compression-baselayer-4pwbz5e1x6" >Nike Women's Clothing - Compression/Baselayer</a></li>
+            <li><a href="https://www.nike.com/w/womens-bodysuits-2a768z5e1x6" >Nike Women's Clothing - Bodysuits</a></li>
+            <li><a href="https://www.nike.com/w/womens-jumpsuits-rompers-4w2rmz5e1x6" >Nike Women's Clothing - Jumpsuits/Rompers</a></li>
+            <li><a href="https://www.nike.com/w/womens-skirts-dresses-5e1x6z8y3qp" >Nike Women's Clothing - Dresses/Skirts</a></li>
+            <li><a href="https://www.nike.com/w/womens-tracksuits-1ll2wz5e1x6" >Nike Women's Clothing - Tracksuits</a></li>
+            <li><a href="https://www.nike.com/w/womens-surf-swimwear-5e1x6zq3un" >Nike Women's Clothing - Swimwear</a></li>
+            <li><a href="https://www.nike.com/w/womens-hijabs-5e1x6zl06h" >Nike Women's Clothing - Hijabs</a></li>
+            <li><a href="https://www.nike.com/w/womens-socks-5e1x6z7ny3q" >Nike Women's Clothing - Socks</a></li>
+<!--       Nike Women's Accessories -->
+      <li><a href="https://www.nike.com/w/womens-accessories-equipment-5e1x6zawwpw" >Nike Women's Accessories - All Men's Accessories</a></li>
+          <li><a href="https://www.nike.com/w/womens-bags-and-backpacks-5e1x6z9xy71" >Nike Women's Accessories - Bags/Backpacks</a></li>
+            <li><a href="https://www.nike.com/w/womens-belts-1oc40z5e1x6" >Nike Women's Accessories - Belts</a></li>
+          <li><a href="https://www.nike.com/w/womens-balls-580b1z5e1x6" >Nike Women's Accessories - Balls</a></li>
+          <li><a href="https://www.nike.com/w/womens-gloves-mitts-5e1x6z74gmr" >Nike Women's Accessories - Gloves/Mitts</a></li>
+          <li><a href="https://www.nike.com/w/womens-hats-visors-headbands-52r49z5e1x6" >Nike Women's Accessories - Hats/Visors/Headbands</a></li>
+          <li><a href="https://www.nike.com/w/womens-watches-2axv8z5e1x6" >Nike Women's Accessories - Watches</a></li>
+          <li><a href="https://www.nike.com/w/womens-yoga-mats-5e1x6z821ge" >Nike Women's Accessories - Yoga Mats</a></li>
+          <li><a href="https://www.nike.com/w/womens-home-workout-gear-5e1x6z5s11t" >Nike Women's Accessories - Home Workout Gear</a></li>
+          <li><a href="https://www.nike.com/w/womens-pads-guards-protection-4jlpjz5e1x6" >Nike Women's Accessories - Pads, Guards, & Protection</a></li>
+            <li><a href="https://www.nike.com/w/womens-sleeves-arm-bands-5e1x6zamwfd" >Nike Women's Accessories - Sleeves & Armbands</a></li>
+            <li><a href="https://www.nike.com/w/womens-swim-goggles-caps-5e1x6z8g8n4" >Nike Women's Accessories - Swim Goggles & Caps</a></li>
+            <li><a href="https://www.nike.com/w/womens-sunglasses-5e1x6zarlyp" >Nike Women's Accessories - Sunglasses</a></li>
+            <li><a href="https://www.nike.com/w/womens-water-bottles-hydration-5e1x6z8yveu" >Nike Women's Accessories - Water Bottles</a></li>
+<!--       Nike Boy's Products -->
+      <li><a href="https://www.nike.com/w/boys-shoes-1onrazy7ok">Nike Boy's Products - All Boys' Footwear</a></li>
+            <li><a href="https://www.nike.com/w/boys-clothing-1onraz6ymx6" >Nike Boy's Products - All Boys' Clothing</a></li>
+            <li><a href="https://www.nike.com/w/boys-accessories-equipment-1onrazawwpw" >Nike Boy's Products - All Boys' Accessories</a></li>
+<!--       Nike Girl's Clothing -->
+      <li><a href="https://www.nike.com/w/girls-shoes-3aqegzy7ok" >Nike Girl's Clothing - All Girls' Footwear</a></li>
+            <li><a href="https://www.nike.com/w/girls-clothing-3aqegz6ymx6" >Nike Girl's Clothing - All Girls' Clothing</a></li>
+            <li><a href="https://www.nike.com/w/girls-accessories-equipment-3aqegzawwpw" >Nike Girl's Clothing - All Girls' Accessories</a></li>
+<!--       Nike Toddler's Accessories -->
+      <li><a href="https://www.nike.com/w/baby-toddler-kids-shoes-2j488zv4dhzy7ok" >Nike Baby/Toddler's Accessories - Baby/Toddlers Footwear</a></li>
+            <li><a href="https://www.nike.com/w/baby-toddler-kids-clothing-2j488z6ymx6zv4dh" >Nike Baby/Toddler's Accessories - Baby/Toddlers Clothing</a></li>
+<!--       North Face Start -->
+      <li><a href="./Pages/North_Face.html">North Face</a></li>
+      <!--       North Face Featured -->
+      <li><a href="https://www.thenorthface.com/en-us/mens/mens-featured/mens-new-arrivals-c226102">North Face Featured - Mens' New Arrivals</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/womens/womens-featured/womens-new-arrivals-c226114" >North Face Featured - Womens' New Arrivals</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/kids/featured/kids-new-arrivals-c226127" >North Face Featured - Kids' New Arrivals</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/bags-and-gear/featured/new-arrivals-c226139">North Face Featured - Bags & Gear New Arrivals</a></li>
+      <li><a href="https://www.thenorthface.com/en-us/sale/mens-sale-c317774" >North Face Featured - All Mens' Sales</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/sale/womens-sale-c317775" >North Face Featured - All Womens' Sales</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/sale/kids-sale-c317776" >North Face Featured - Kids' Sales</a></li>
+<!--       North Face Men's Footwear -->
+      <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear-c211706">North Face Men's Footwear - All Men's Footwear</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear/mens-trail-run-c213281" >North Face Men's Footwear - Running</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear/mens-boots-c695280" >North Face Men's Footwear - Boots</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear/mens-sneakers-c296771" >North Face Men's Footwear - Sneakers</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear/mens-slippers-c695279" >North Face Men's Footwear - Slippers</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear/mens-hike-c263751" >North Face Men's Footwear - Hiking</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear/mens-sandals-c313279" >North Face Men's Footwear - Sandals</a></li>
+<!--       North Face Men's Clothing -->
+      <li><a href="https://www.thenorthface.com/en-us/mens" >North Face Men's Clothing - All Men's Clothing</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-tops-c211703" >North Face Men's Clothing - T-Shirts/Tops</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-fleece-c299285" >North Face Men's Clothing - Fleece</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-bottoms/mens-shorts-c224220" >North Face Men's Clothing - Shorts</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-bottoms-c211704" >North Face Men's Clothing - Pants</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-jackets-and-vests-c211702" >North Face Men's Clothing - Jackets</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-tops/mens-hoodies-and-sweatshirts-c224211" >North Face Men's Clothing - Hoodies</a></li>
+              <li><a href="https://www.thenorthface.com/en-us/mens/mens-bottoms/mens-sweatpants-and-joggers-c829829" >North Face Men's Clothing - Sweatpants</a></li>
+<!--       North Face Men's Accessories -->
+      <li><a href="https://www.thenorthface.com/en-us/mens/mens-accessories-c211707" >North Face Men's Accessories - All Men's Accessories</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/bags-and-gear/backpacks/mens-backpacks-c298772" >North Face Men's Accessories - Bags/Backpacks</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-accessories/mens-gloves-c213238" >North Face Men's Accessories - Gloves</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-accessories/mens-hats-c374281" >North Face Men's Accessories - Caps</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-accessories/mens-brimmers-and-buckets-c829833" >North Face Men's Accessories - Beanies</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-accessories/mens-smartwool-socks-c213243" >North Face Men's Accessories - Socks</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/mens/mens-accessories/mens-brimmers-and-buckets-c829833" >North Face Men's Accessories - Brimmers & Buckets</a></li>
+<!--       North Face Women's Footwear -->
+      <li><a href="https://www.thenorthface.com/en-us/womens/womens-footwear-c211723">North Face Women's Footwear - All Women's Footwear</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/womens/womens-footwear/womens-trail-run-c213489" >North Face Women's Footwear - Running</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/womens/womens-footwear/womens-boots-c695282" >North Face Women's Footwear - Boots</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/womens/womens-footwear/womens-sneakers-c296772" >North Face Women's Footwear - Sneakers</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/womens/womens-footwear/womens-slippers-c695281" >North Face Women's Footwear - Slippers</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/mens/mens-footwear/mens-hike-c263751" >North Face Women's Footwear - Hiking</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/womens/womens-footwear/womens-sandals-c313280" >North Face Women's Footwear - Sandals</a></li>
+<!--       North Face Women's Clothing -->
+      <li><a href="https://www.thenorthface.com/en-us/womens" >North Face Women's Clothing - All Women's Clothing</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-tops-c211720" >North Face Women's Clothing - T-Shirts/Tops</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-fleece-c299271" >North Face Women's Clothing - Fleece</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-bottoms/womens-shorts-c224274" >North Face Women's Clothing - Shorts</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-bottoms/womens-pants-c224272" >North Face Women's Clothing - Pants</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-tops/womens-tank-tops-c213339" >North Face Women's Clothing - Tank Tops</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-tops/womens-hoodies-and-sweatshirts-c224264" >North Face Women's Clothing - Hoodies</a></li>
+              <li><a href="https://www.thenorthface.com/en-us/womens/womens-bottoms/womens-sweatpants-and-joggers-c829828" >North Face Women's Clothing - Sweatpants</a></li>
+<!--       North Face Women's Accessories -->
+      <li><a href="https://www.thenorthface.com/en-us/womens/womens-accessories-c211724" >North Face Women's Accessories - All Women's Accessories</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/bags-and-gear/backpacks/womens-backpacks-c268801" >North Face Women's Accessories - Bags/Backpacks</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-accessories/womens-gloves-c213446" >North Face Women's Accessories - Gloves</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-accessories/womens-hats-c374282" >North Face Women's Accessories - Caps</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-accessories/womens-beanies-c213439" >North Face Women's Accessories - Beanies</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-accessories/womens-smartwool-socks-c213451" >North Face Women's Accessories - Socks</a></li>
+          <li><a href="https://www.thenorthface.com/en-us/womens/womens-accessories/womens-brimmers-and-buckets-c829832" >North Face Women's Accessories - Brimmers & Buckets</a></li>
+<!--       North Face Boy's Footwear -->
+      <li><a href="https://www.thenorthface.com/en-us/kids/boys-footwear-c211739">North Face Boy's Footwear - All Boys' Footwear</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/kids/boys-apparel-c211735" >North Face Boy's Footwear - All Boys' Clothing</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/kids/boys-accessories-c211740" >North Face Boy's Footwear - All Boys' Accessories</a></li>
+<!--       North Face Girl's Clothing -->
+      <li><a href="https://www.thenorthface.com/en-us/kids/girls-footwear-c211745" >North Face Girl's Clothing - All Girls' Footwear</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/kids/girls-footwear-c211745" >North Face Girl's Clothing - All Girls' Clothing</a></li>
+            <li><a href="https://www.thenorthface.com/en-us/kids/girls-accessories-c211746" >North Face Girl's Clothing - All Girls' Accessories</a></li>
+<!--       North Face Toddler's Accessories -->
+      <li><a href="https://www.thenorthface.com/en-us/kids/little-kids-2-7-c226757" >North Face Baby/Toddler's Accessories - Baby/Toddlers Footwear & Clothing</a></li>
       </ul>
   </main>
   
@@ -72,30 +443,11 @@
         </a> <p>+1 868-662-6002</p>
     </div>
   </div>
-  <!--  <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>  -->
-    <script src="script.js"></script>
+
+    
   </footer>
 
-<!--   <script>
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('searchbar');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("search-list");
-  li = ul.getElementsByTagName('li');
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script> -->
-  
 </body>
+
+</html>

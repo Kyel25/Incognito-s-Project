@@ -6,23 +6,25 @@
   <meta name="viewport" content="width=device-width">
   <title>Puma Clothing</title>
   <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="../slider.css" rel="stylesheet" type="text/css"/>
 </head>
   
 <body>
-  <header>
+  <header class=text>
     <div>
       <nav>
-        <a href=../index.html id=homepage>THE CLOTHING PORTAL</a>
+        <a href=../index.html id=homepage>
+          <h1>Apparel Emporium</h1>
+        </a>
       </nav>  
     </div>
-    <div>
-      <form action="info.html" method="GET" id=searchbar>
-        SEARCH HERE: 
-        <input type="text" name="search here" placeholder="Search here" />
-        <input type="submit" value="search" />
-      </form>
+    <div class="header-heading">
+      <div class=searchbar>
+        <a href=../index.html><button class="button">Home</button></a>
+        <a href=../searchpage.html><button class="button">Search</button></a>
+      </div>
       <div class="social-icons">
-        <p>Follow Us!</p>
+        Follow Us!
         <a href="https://www.instagram.com/yourusername" style="color: white;"target="_blank">
       <i class="fab fa-instagram fa-2x"></i>
         </a>
@@ -34,13 +36,302 @@
   </header>
 
   <main>
-    <section>Puma Page</section>
+
+<section> 
+    <div class="rt-container">
+    	<div class="col-rt-12">
+  <!-- Slider -->
+          <div id="slider">
+            <div class="slides">
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>test1</h2>
+                    <p>test</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://wallpapercave.com/wp/wp4325011.jpg"> </div>
+              </div>
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://images.pexels.com/photos/684152/pexels-photo-684152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> </div>
+              </div>
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://images.pexels.com/photos/1077562/pexels-photo-1077562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> </div>
+              </div>
+              <div class="slider">
+                <div class="legend"></div>
+                <div class="content">
+                  <div class="content-txt">
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+                  </div>
+                </div>
+                <div class="image"> <img src="https://images.pexels.com/photos/12387238/pexels-photo-12387238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> </div>
+              </div>
+            </div>
+            <div class="switch">
+              <ul>
+                <li>
+                  <div class="on"></div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+         </div> 
+	 </div>          
+</section>
+    
+<!--     <div class=brand-heading>
+      <section>Puma Page</section>
+    </div> -->
+    <section class=brand-page>
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Featured</p>
+            <p>New Arrivals</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/men/new-arrivals">Mens' New Arrival</a></li>
+            <li><a href="https://us.puma.com/us/en/women/new-arrivals" >Womens' New Arrivals</a></li>
+           <li><a href="https://us.puma.com/us/en/kids/new-arrivals">Kid's New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Sales</p>
+          </div>
+          <ul class=category-list>
+            <li><a href=https://us.puma.com/us/en/sale/mens-sale >All Mens Sales</a></li>
+            <li><a href=https://us.puma.com/us/en/sale/womens-sale>All Womens Sales</a></li>
+            <li><a href=https://us.puma.com/us/en/sale/kids-sale >All Kids Sales</a></li>
+             <li><a href=https://us.puma.com/us/en/sale/sports >All Sport Sales</a></li>
+          </ul>
+        </div>
+        
+      </figure>
+    
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Men</p>
+            <p>Men's Footwear</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/men/shoes">All Men's Shoes</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/classics" >Classics</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/suede-mens-sneakers" >Suede</a></a></li>
+            <li><a href="https://us.puma.com/us/en/men/mens-rs-collection" >RS Collection</a></li>
+            <li><a href="https://us.puma.com/us/en/collections/lifestyle/puma-rider-pack/mens-rider-pack" >Rider Pack</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/slipstream" >Slipstream</a></li>
+           <li><a href="https://us.puma.com/us/en/men/shoes/lifestyle">Lifestyle</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/training-and-gym" >Train and Gym</a></a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/running" >Running</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/basketball" >Basketball</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/skate-shoes" >Skate</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/motorsport" >Motorsport</a></li>
+           <li><a href="https://us.puma.com/us/en/men/shoes/soccer" >Soccer</a></li>
+            <li><a href="https://us.puma.com/us/en/men/shoes/slides-and-sandals" >Slides and Sandals</a></li>
+            
+            <li><a href="https://us.puma.com/us/en/puma/shop-all-mids?pref_gender=Men" >Boots and Mids</a></li>
+            
+            
+          </ul>
+        </div>
+
+        <div>
+        <div class=brand-category>
+            <p>Men's Clothing</p>
+          </div>
+          <ul class=category-list>
+          <li><a href="https://us.puma.com/us/en/men/clothing" >All Men's Clothing</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/classics" >Classics</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/hoodies-and-sweatshirts" >Hoodies/Sweatshirts</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/t-shirts-and-tops" >T-Shirts and Tops</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/polos" >Polos</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/shorts" >Shorts</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/tracksuits" >Tracksuits</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/pants" >Pants</a></li>
+          <li><a href="https://us.puma.com/us/en/mens/clothing/jackets-and-outerwear" >Jackets and Outerwear</a></li>
+          <li><a href="https://us.puma.com/us/en/men/clothing/soccer-jerseys" >Team Jerseys</a></li>
+            <li><a href="https://us.puma.com/us/en/men/clothing/loungewear" >Loungewear</a></li>
+            <li><a href="https://us.puma.com/us/en/puma/co-ords/mens-co-ords" >Mens Matching SETS</a></li>
+            <li><a href="https://us.puma.com/us/en/men/clothing/big-and-tall" >Big and Tall</a></li>
+            
+        </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Men's Accessories</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/men/accessories" >All Men's Accessories</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/hats" >Hats</a></li>
+            <li><a href="https://us.puma.com/us/en/men/accessories/socks-and-underwear" >Socks and Underwear</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/bags-and-backpacks" >Bags and Backpacks</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/face-masks" >Face Masks and Gaiters</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/watches" >Watches</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/sunglasses" >Sunglasses</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/sports-equipment" >Sports Equipment</a></li>
+          <li><a href="https://us.puma.com/us/en/men/accessories/sports-equipment/soccer-balls" >Soccer Balls</a></li>
+        
+        </ul>
+        </div>
+      </figure>
+      
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Women</p>
+            <p>Women's Footwear</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/women/shoes">All Shoes</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/suede-womens-sneakers" >Suede</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/cali" >Cali</a></li>
+            <li><a href="https://us.puma.com/us/en/women/womens-rs-collection" >RS collection</a></li>
+            <li><a href="https://us.puma.com/us/en/collections/lifestyle/puma-rider-pack/womens-rider-pack" >Rider Pack</a></li>
+            <li><a href="https://us.puma.com/us/en/womens/classics/mayze" >Mayze</a></a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/lifestyle" >Lifestyle</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/training-and-gym" >Lifestyle and Gym</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/running" >Running</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/basketball">Basketball</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/motorsport" >Motorsport</a></li>
+            <li><a href="https://us.puma.com/us/en/women/shoes/slides-and-sandals" >Slides and Sandals</a></li>
+            <li><a href="https://us.puma.com/us/en/puma/shop-all-mids?pref_gender=Women" >Boots and Mids</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Women's Clothing</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/women/clothing" >All Women's Clothing</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/classics" >Classics</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/hoodies-and-sweatshirts" >Hoodies and Sweatshirts</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/t-shirts-and-tops" >T-Shirts and Tops</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/leggings" >Leggings</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/dresses-and-skirts" >Dresses and Skirts</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/shorts" >Shorts</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/bras" >Bras</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/tracksuits" >Tracksuits</a></li>
+            <li><a href="https://us.puma.com/us/en/womens/clothing/jackets-and-outerwear" >Jackets and Outerwear</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/pants" >Pants</a></li>
+            <li><a href="https://us.puma.com/us/en/women/clothing/loungewear">Loungewear</a></li>
+ <li><a href="https://us.puma.com/us/en/puma/matching-sets/womens-matching-sets">Matching Sets</a></li>
+ <li><a href="https://us.puma.com/us/en/women/clothing/plus-size">Plus Size</a></li>
+<li><a href="https://us.puma.com/us/en/women/clothing/maternity">Maternity</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class=brand-category>
+            <p>Women's Accessories</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/women/accessories" >All Women's Accessories</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/bags-and-backpacks" >Bags and Backpacks</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/hats" >Hats</a></li>
+           <li><a href="https://us.puma.com/us/en/women/accessories/socks" >Socks</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/face-masks" >Face Masks and Gaiters</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/watches" >Watches</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/sunglasses" >Sunglasses</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/sports-equipment" >Sports Equipment</a></li>
+            <li><a href="https://us.puma.com/us/en/women/accessories/sports-equipment/soccer-balls" >Soccer Balls</a></li>
+          </ul>
+        </div>
+      </figure>
+      
+      <figure class=category>
+        <div>
+          <div class=brand-category>
+            <p>Kids</p>
+            <p>Boys</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/kids/boys/clothing" >All Boys' Clothing</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/boys/accessories" >All Boys' Accessories</a></li>
+             <li><a href="https://us.puma.com/us/en/kids/boys/sport" >All Boys' Sport</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/boys/shoes">All Boys' Footwear</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class=brand-category>
+            <p>Girls</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/kids/girls/clothing" >All Girls' Clothing</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/girls/accessories" >All Girls' Accessories</a></li>
+            <li><a href="https://us.puma.com/us/en/kids/girls/sport" >All Girls' Sport</a></li>
+             <li><a href="https://us.puma.com/us/en/kids/girls/shoes" >All Girls' Footwear</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class=brand-category>
+            <p>Baby/Infants</p>
+          </div>
+          <ul class=category-list>
+            <li><a href="https://us.puma.com/us/en/kids-shop-by-size-clothing" >Baby/Infant Clothing</a></li>           
+            <li><a href="https://us.puma.com/us/en/kids-shop-by-size-shoes" >Baby/Infant Footwear</a></li>
+          </ul>
+        </div>
+      </figure>
+    </section>
+    
   </main> 
+
+  <main class=brand-socials>
+    <p> Interact with brand socials here</p>
+    <section class=brand-twitter>
+    <a class="twitter-timeline"
+      href="https://twitter.com/PUMA"
+      data-width="500"
+      data-height="400"
+      data-tweet-limit="7">
+      Tweets by @PUMA
+    </a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+    
+    <section class= brand-facebook>
+      <div class="fb-page" data-href="https://www.facebook.com/PUMA" data-tabs="timeline" data-width="500px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/adidasoriginals" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PUMA">PUMA</a></blockquote></div>
+<!--     <div id="fb-root"></div> -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="ZQ8BEAXj"></script>
+  </section>
+
+    <section class=brand-pinterest>
+      <a data-pin-do="embedUser" data-pin-board-width="500" data-pin-scale-height="300" data-pin-scale-width="80" href="https://www.pinterest.com/puma/"></a>
+      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    </section>
+  </main>
   
   <footer>
      <div class="footer-heading">
     <h1 class="left-heading">OUR MISSION</h1>
-    
+       
     <h1 class="right-heading">CONTACT US</h1>
   </div>
      <div class="footer-content">
@@ -60,5 +351,7 @@
     <p style="color: white; text-align: center; margin-bottom: 0px;">Made by (Editor 1), (Editor 2), (Editor 3) and (Editor 4)</p>
   </footer>
   
-  
+  <script src="../script.js"></script>
 </body>
+
+</html>

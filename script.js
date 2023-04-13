@@ -1,19 +1,10 @@
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('searchbar');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("search-list");
-  li = ul.getElementsByTagName('li');
+const result = Array.from(document.querySelectorAll('.category-list li'))
+.map(e => e.innerText);
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
+console.log(result);
+
+//const sliderText = document.querySelector('.slider-text');
+//sliderText.textContent = 'This is a new text content.';
+//sliderText.style.animationPlayState = 'paused';              //code for sliding text 
+//sliderText.style.animationPlayState = 'running';
+//sliderText.style.animationDuration = '5s';
