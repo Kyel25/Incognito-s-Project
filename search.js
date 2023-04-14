@@ -1,9 +1,3 @@
-let element = document.getElementById("search-list")
-[element].style.display = 'none';
-
-function makeVisible(){
-  [element].style.display = 'none';
-}
 
 function myFunction() {
   var input, filter, ul, li, a, i, txtValue;
@@ -21,6 +15,12 @@ function myFunction() {
     } else {
       li[i].style.display = "none";
     }
+  }
+
+  if(li.style.display = "none"){
+    ul = document.getElementById("search-list");
+    li = ul.getElementsByTagName('li');
+    li = "Brand does not exist"
   }
 }
 

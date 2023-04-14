@@ -22,12 +22,12 @@ html {
     }
 
     .brand-socials{
-      grid-template-columns: 1;
-      grid-template-rows: auto;
+      grid-template-columns: auto;
+      grid-template-rows: 3;
     }
 
     .brand-twitter, .fb-page, .brand-pinterest {
-      grid-column: span 4;
+      grid-column: span 3;
     }
   }
 
@@ -38,14 +38,18 @@ html {
     height: 100%
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to bottom right, black, grey, black, grey)
+/*     background-image: linear-gradient(to bottom right, black, grey, black, grey); */
+    background-image: url("https://img.freepik.com/free-vector/black-wide-banner-with-shadow-lines-design_1017-34216.jpg?w=2000");
   }
   
   nav{
     margin:auto;
     text-align: center;
     grid-column: span 2;
+    
   }
+
+ 
 
    #homepage{
 
@@ -55,16 +59,18 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 32px;
   text-transform: uppercase;
-  font-family: "Gambetta", serif, Arial, Helvetica, san-serif;
+  background-image: url("https://img.freepik.com/free-vector/black-wide-banner-with-shadow-lines-design_1017-34216.jpg?w=2000");
+  font-family: 'Asul', sans-serif;
   letter-spacing: -3px;
   transition: 700ms ease;
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
-  color: PaleGoldenRod;
+  color: #F5AD28;
   outline: none;
   text-align: center;
+
   }
 
 #homepage:hover {
@@ -79,11 +85,13 @@ html {
     background-size: fill;
   background-repeat: no-repeat;
   background-position: center;
+    
   }
 
 .header-heading{
   display: flex;
   justify-content : space-between;
+  
 }
 footer {
 /*   background-color: #ccc; */
@@ -184,7 +192,7 @@ footer {
 
 .category{
   border-color: black;
-    border-width: 2px;
+  border-width: 2px;
 }
 
   li{
@@ -449,7 +457,7 @@ body {
 }
 
 button {
-  background-color: PaleGoldenRod;
+  background-color: #F5AD28;
   border: none;
   color: #242424;
   padding: 15px 32px;
@@ -485,18 +493,23 @@ button{
 } */
 
 button:hover {
-	color:  rgba(255, 255, 255, 0.85);
-	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+	color:  black;
+	box-shadow: whitesmoke 0 0px 0px 40px inset;
+  opacity: 0.7;
+}
+
+#search-page{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  max-height: 550px;
 }
 
 #searchbar {
   text-align: left;
   margin: 20px 40px;
   border-radius: 5px;
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 80%; /* Full-width */
+  width: 95%;
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
@@ -508,6 +521,7 @@ button:hover {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  overflow-y: scroll;
 /*   visibility: hidden; */
 }
 
