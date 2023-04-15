@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Search Page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="search.js"></script>
+  <script src="script.js"></script>
   <link rel="icon" href="/siteicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Asul&display=swap" rel="stylesheet">
 </head>
@@ -31,9 +31,9 @@
   </header>
 
   <main id=search-page>
-    <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search for names..">
+    <input type="text" id="searchbar" onfocus="w3_open()" onblur=w3_close() onkeyup="myFunction()" placeholder="Search for names..">
 
-    <ul id="search-list">
+    <ul id="search-list" style=display:none;>
 <!--       Adidas start -->
       <li><a href="./Pages/Adidas.html">Adidas</a></li>
 <!--       Adidas Featured -->

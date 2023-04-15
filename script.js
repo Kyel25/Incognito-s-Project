@@ -3,8 +3,33 @@ const result = Array.from(document.querySelectorAll('.category-list li'))
 
 console.log(result);
 
-//const sliderText = document.querySelector('.slider-text');
-//sliderText.textContent = 'This is a new text content.';
-//sliderText.style.animationPlayState = 'paused';              //code for sliding text 
-//sliderText.style.animationPlayState = 'running';
-//sliderText.style.animationDuration = '5s';
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchbar');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("search-list");
+  li = ul.getElementsByTagName('li');
+
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+
+  console.log("Completed")
+}
+
+
+function w3_open() {
+  document.getElementById("search-list").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("search-list").style.display = "none";
+}
+
